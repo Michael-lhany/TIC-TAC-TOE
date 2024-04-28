@@ -1,0 +1,10 @@
+debug/main.o
+debug/MiniMaxAgent.o
+debug/Board.o
+debug/TicTacToeGame.o
+debug/TitleScreen.o
+debug/TTTController.o
+debug/qrc_resources.o
+debug/moc_TicTacToeGame.o
+debug/moc_TitleScreen.o
+debug/moc_TTTController.o

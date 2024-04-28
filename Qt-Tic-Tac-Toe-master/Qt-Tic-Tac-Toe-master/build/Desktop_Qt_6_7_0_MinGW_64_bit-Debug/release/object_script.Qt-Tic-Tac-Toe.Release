@@ -1,0 +1,10 @@
+release/main.o
+release/MiniMaxAgent.o
+release/Board.o
+release/TicTacToeGame.o
+release/TitleScreen.o
+release/TTTController.o
+release/qrc_resources.o
+release/moc_TicTacToeGame.o
+release/moc_TitleScreen.o
+release/moc_TTTController.o
