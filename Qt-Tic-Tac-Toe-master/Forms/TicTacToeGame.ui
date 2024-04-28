@@ -66,6 +66,13 @@ max-width: 100px;
           </widget>
          </item>
          <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QPushButton" name="reset">
            <property name="text">
             <string>New Game</string>
