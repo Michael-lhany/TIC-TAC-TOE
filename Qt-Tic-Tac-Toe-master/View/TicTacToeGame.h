@@ -6,6 +6,7 @@
 #include <QDialog>
 #include <vector>
 #include <memory>
+#include <QLabel>
 
 using std::vector;
 
@@ -83,6 +84,7 @@ private:
      * that will be used when declaring the final state of a game.
      */
     QString getBoardFinalStateText(BoardState boardState);
+
 
 signals:
     /**

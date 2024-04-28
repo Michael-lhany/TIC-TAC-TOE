@@ -83,6 +83,23 @@ QString TicTacToeGame::getPlayerStyleSheet(BoardMarks currentPlayer)
 void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
 {
     // Update Cell button in GUI
+    // Convert enum value to string representation
+    // Convert enum value to string representation
+    QString markText;
+    switch (currentPlayer) {
+    case BoardMarks::Empty:
+        markText = "Empty";
+        break;
+    case BoardMarks::X:
+        markText = "Player X";
+        break;
+    case BoardMarks::O:
+        markText = "Player O";
+        break;
+    }
+
+    // Set the text of the QLabel
+    ui->label->setText(markText);
     cell.cellBtn->setStyleSheet(getPlayerStyleSheet(currentPlayer));
     cell.cellBtn->setText(getPlayerText(currentPlayer));
 }
