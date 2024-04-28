@@ -1,6 +1,9 @@
 #include "TicTacToeGame.h"
+#include"Global_variables.h"
 #include <QMessageBox>
 #include <QPushButton>
+
+
 
 TicTacToeGame::TicTacToeGame(QWidget *parent)
     : QDialog(parent), ui(new Ui::TicTacToeGame)
@@ -86,6 +89,7 @@ void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
     // Convert enum value to string representation
     // Convert enum value to string representation
     QString markText;
+    if(!Ai_checked){
     switch (currentPlayer) {
     case BoardMarks::Empty:
         markText = "Empty";
@@ -96,6 +100,8 @@ void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
     case BoardMarks::O:
         markText = "Player O";
         break;
+    }}else{
+        markText ="Ai mode";
     }
 
     // Set the text of the QLabel

@@ -43,6 +43,7 @@ HEADERS += \
     AI/AIAgent.h \
     AI/NoAgent.h \
     AI/MiniMaxAgent.h \
+    Global_variables.h \
     Model/Board.h \
     View/TicTacToeGame.h \
     View/TitleScreen.h \

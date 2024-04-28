@@ -48,4 +48,5 @@ enum class BoardMarks { Empty, X, O };
  */
 enum class BoardState { NoWinner, XWins, OWins, Tie };
 
+
 #endif // TTTCOMMONTYPES_H

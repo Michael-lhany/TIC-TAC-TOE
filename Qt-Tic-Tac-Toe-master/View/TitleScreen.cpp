@@ -1,5 +1,8 @@
 #include "TitleScreen.h"
 #include "TTTController.h"
+#include "Global_variables.h"
+bool Ai_checked = true ;
+
 
 TitleScreen::TitleScreen(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::TitleScreen)
@@ -27,6 +30,8 @@ void TitleScreen::updateBoardSize(int size)
 
 void TitleScreen::updateSinglePlayer(bool checked)
 {
+    Ai_checked=checked;
+
     if (checked) {
         ui->AIStarts->setEnabled(true);
         ui->miniMaxDepth->setEnabled(true);
