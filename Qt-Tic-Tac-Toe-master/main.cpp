@@ -2,6 +2,8 @@
 #include "TitleScreen.h"
 #include <QApplication>
 
+
+
 int main(int argc, char *argv[]) {
     // Disabled QuitOnLastWindowClosed to avoid the dialog closing after QMessageBox is closed.
     qApp->setQuitOnLastWindowClosed(false);
