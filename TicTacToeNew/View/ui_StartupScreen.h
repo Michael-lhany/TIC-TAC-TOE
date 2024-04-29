@@ -1,0 +1,4 @@
+#ifndef UI_STARTUPSCREEN_H
+#define UI_STARTUPSCREEN_H
+
+#endif // UI_STARTUPSCREEN_H
