@@ -22,8 +22,8 @@ void MainPage::on_pushButton_LogIn_clicked()
     {
         QMessageBox::information(this,"Login","Username and password is correct");
         this->hide();
-        TitleScreen *titlescreen= new TitleScreen();
-        titlescreen->show();
+        Profile *profile= new Profile();
+        profile->show();
     }
     else{
         QMessageBox::warning(this,"Login","Username and password is not correct");
@@ -40,5 +40,11 @@ void MainPage::on_pushButton_exit_clicked()
     {
         QApplication::quit();
     }
+}
+
+
+void MainPage::on_pushButton_LogIn_pressed()
+{
+
 }
 

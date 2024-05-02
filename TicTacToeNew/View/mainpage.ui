@@ -14,61 +14,20 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">Qlabel
+   <string notr="true">QWidget
 {
- background-color:rgb(52,50,64);
- color:white;
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton_LogIn">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>400</y>
-      <width>141</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>15</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton
-{
-	border:none;
-	background-color:rgb(28, 130, 255);
-	border-radius:15px;
-	color:black;
-}
-QPushButton:Hover
-{
-	border:none;
-	background-color:rgb(28, 130, 255);
-	border-radius:15px;
-	color:white;
-}
-QPushButton:Pressed
-{
-	border:5px solid rgb(241,92,34);
-	background-color:rgb(28, 130, 255);
-	border-radius:15px;
-	color:red;
-}</string>
-    </property>
-    <property name="text">
-     <string>Log In</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>180</y>
+      <x>290</x>
+      <y>160</y>
       <width>160</width>
       <height>40</height>
      </rect>
@@ -83,7 +42,10 @@ QPushButton:Pressed
     <property name="styleSheet">
      <string notr="true">QLabel
 {
-	color:rgb(90,90,100);
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
 }</string>
     </property>
     <property name="text">
@@ -93,59 +55,11 @@ QPushButton:Pressed
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_exit">
-    <property name="geometry">
-     <rect>
-      <x>710</x>
-      <y>50</y>
-      <width>71</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="text">
-     <string>X</string>
-    </property>
-    <property name="icon">
-     <iconset theme="text-x-generic"/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>50</y>
-      <width>171</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Palatino Linotype</family>
-      <pointsize>35</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Sign In</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>290</y>
+      <x>290</x>
+      <y>270</y>
       <width>160</width>
       <height>40</height>
      </rect>
@@ -160,7 +74,10 @@ QPushButton:Pressed
     <property name="styleSheet">
      <string notr="true">QLabel
 {
-	color:rgb(90,90,100);
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
 }</string>
     </property>
     <property name="text">
@@ -191,15 +108,37 @@ QPushButton:Pressed
     <property name="styleSheet">
      <string notr="true">QLineEdit
 {
-	border: none;
-  	border-bottom: 3px solid rgb(241,92,34);
-    background-color: Transparent;
-	color:black;
-	padding:5px 5px 5px 5px;
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
 }
-QLineEdit:Focus
+
+
+QLineEdit::hover
 {
-	 border: 2px solid rgb(241,92,34);
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
 }</string>
     </property>
     <property name="text">
@@ -228,15 +167,37 @@ QLineEdit:Focus
     <property name="styleSheet">
      <string notr="true">QLineEdit
 {
-	border: none;
-  	border-bottom: 3px solid rgb(241,92,34);
-    background-color: Transparent;
-	color:black;
-	padding:5px 5px 5px 5px;
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
 }
-QLineEdit:Focus
+
+
+QLineEdit::hover
 {
-	 border: 2px solid rgb(241,92,34);
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
 }</string>
     </property>
     <property name="text">
@@ -247,6 +208,266 @@ QLineEdit:Focus
     </property>
     <property name="placeholderText">
      <string>Enter Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LogIn">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>430</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-radius:15px;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Log In</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LogIn_3">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>430</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-radius:15px;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Create New Account</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>390</y>
+      <width>23</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton::hover
+{
+	background-color: #00111d;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #01dcff;
+	color: #000000;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #01dcff;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>390</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Remeber Me</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_exit">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>60</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>17</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-radius:15px;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>27</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign In</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
   </widget>

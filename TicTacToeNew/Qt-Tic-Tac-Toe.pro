@@ -33,6 +33,7 @@ INCLUDEPATH += \
 
 SOURCES += \
     View/mainpage.cpp \
+    View/profile.cpp \
     main.cpp \
     AI/MiniMaxAgent.cpp \
     Model/Board.cpp \
@@ -49,12 +50,14 @@ HEADERS += \
     View/TitleScreen.h \
     Controller/TTTController.h \
     TTTCommonTypes.h \
-    View/mainpage.h
+    View/mainpage.h \
+    View/profile.h
 
 FORMS += \
     Forms/TicTacToeGame.ui \
     Forms/titlescreen.ui \
-    View/mainpage.ui
+    View/mainpage.ui \
+    View/profile.ui
 
 RC_ICONS = images/icon.ico
 

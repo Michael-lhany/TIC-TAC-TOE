@@ -2,7 +2,8 @@
 #define MAINPAGE_H
 
 #include <QMainWindow>
-#include"TitleScreen.h"
+#include"profile.h"
+
 namespace Ui {
 class MainPage;
 }
@@ -19,6 +20,8 @@ private slots:
     void on_pushButton_LogIn_clicked();
 
     void on_pushButton_exit_clicked();
+
+    void on_pushButton_LogIn_pressed();
 
 private:
     Ui::MainPage *ui;

@@ -34,7 +34,6 @@ void TTTController::startGame()
     // Shows the gameplay GUI.
     view_.exec();
 }
-
 void TTTController::setConnections()
 {
     // Cell connections.

@@ -1,5 +1,6 @@
 #include "TitleScreen.h"
 #include "TTTController.h"
+#include "starthistory.h"
 
 TitleScreen::TitleScreen(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::TitleScreen)
@@ -7,7 +8,12 @@ TitleScreen::TitleScreen(QWidget *parent)
     ui->setupUi(this);
     setConnections();
 }
-
+/*void TitleScreen::MainPage()
+{
+    this->hide();
+    StartHistory *starthistory= new StartHistory();
+    starthistory->show();
+}*/
 void TitleScreen::setConnections()
 {
     connect(ui->boardSize, SIGNAL(valueChanged(int)), SLOT(updateBoardSize(int)));
@@ -70,3 +76,5 @@ void TitleScreen::closeEvent(QCloseEvent *event)
     QMainWindow::closeEvent(event);
     emit exited();
 }
+
+
