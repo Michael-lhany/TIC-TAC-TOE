@@ -9,6 +9,7 @@
 #ifndef UI_TITLESCREEN_H
 #define UI_TITLESCREEN_H
 
+#include "TicTacToeGame.h"
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
@@ -54,7 +55,6 @@ public:
     QLabel *label_7;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *startGame;
-
     void setupUi(QMainWindow *TitleScreen)
     {
         if (TitleScreen->objectName().isEmpty())
@@ -83,6 +83,7 @@ public:
         Logo->setAlignment(Qt::AlignCenter);
 
         horizontalLayout->addWidget(Logo);
+
 
 
         verticalLayout->addLayout(horizontalLayout);
@@ -263,12 +264,20 @@ public:
         miniMaxDepthValue->setText(QCoreApplication::translate("TitleScreen", "3", nullptr));
         label_7->setText(QCoreApplication::translate("TitleScreen", "<html><head/><body><p><span style=\" color:#c10000;\">* Disclaimer: Increasing depth will affect performance </span></p></body></html>", nullptr));
         startGame->setText(QCoreApplication::translate("TitleScreen", "Start Game", nullptr));
+
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class TitleScreen: public Ui_TitleScreen {};
+class TitleScreen: public Ui_TitleScreen {private slots:
+    void on_boardSize_actionTriggered(int action);
+    void on_pushButton_clicked();
+    void on_pushButtonMain_clicked();
+    void on_MainPage_clicked();
+    void on_Main_clicked();
+    void on_boardSize_sliderMoved(int position);
+};
 } // namespace Ui
 
 QT_END_NAMESPACE

@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>587</width>
-    <height>368</height>
+    <width>564</width>
+    <height>403</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -57,22 +57,37 @@ max-width: 100px;
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QPushButton" name="reset">
-           <property name="text">
-            <string>New Game</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="back">
-           <property name="text">
-            <string>Back to title screen</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QGroupBox" name="">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="reset">
+            <property name="text">
+             <string>New Game</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="adell">
+            <property name="font">
+             <font>
+              <family>Segoe UI Semibold</family>
+              <pointsize>13</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mike</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="back">
+            <property name="text">
+             <string>Back to title screen</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </item>

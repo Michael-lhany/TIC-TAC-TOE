@@ -1,6 +1,7 @@
 #include "mainpage.h"
 #include "ui_mainpage.h"
 #include <QMessageBox>
+#include <QApplication>
 MainPage::MainPage(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainPage)
@@ -48,3 +49,30 @@ void MainPage::on_pushButton_LogIn_pressed()
 
 }
 
+<<<<<<< HEAD
+
+void MainPage::on_label_linkActivated(const QString &link)
+{
+
+}
+
+
+void MainPage::on_checkBox_showpassword_stateChanged(int arg1)
+{
+    if (arg1 == Qt::Checked) {
+        ui->lineEdit_password->setEchoMode(QLineEdit::Normal); // Show password
+    } else {
+        ui->lineEdit_password->setEchoMode(QLineEdit::Password); // Hide password
+    }
+}
+
+
+void MainPage::on_pushButton_signup_clicked()
+{
+    this->hide();
+    signup *signupp= new signup();
+    signupp->show();
+}
+
+=======
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d

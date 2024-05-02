@@ -13,7 +13,9 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 
@@ -26,8 +28,10 @@ public:
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QGridLayout *gridBoard;
+    QGroupBox *groupBox;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *reset;
+    QLabel *adell;
     QPushButton *back;
 
     void setupUi(QDialog *TicTacToeGame)
@@ -35,7 +39,7 @@ public:
         if (TicTacToeGame->objectName().isEmpty())
             TicTacToeGame->setObjectName("TicTacToeGame");
         TicTacToeGame->setWindowModality(Qt::WindowModal);
-        TicTacToeGame->resize(587, 368);
+        TicTacToeGame->resize(564, 403);
         QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -67,21 +71,33 @@ public:
 
         verticalLayout->addLayout(gridBoard);
 
-        horizontalLayout_2 = new QHBoxLayout();
+        groupBox = new QGroupBox(TicTacToeGame);
+        groupBox->setObjectName("groupBox");
+        horizontalLayout_2 = new QHBoxLayout(groupBox);
         horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        reset = new QPushButton(TicTacToeGame);
+        reset = new QPushButton(groupBox);
         reset->setObjectName("reset");
 
         horizontalLayout_2->addWidget(reset);
 
-        back = new QPushButton(TicTacToeGame);
+        adell = new QLabel(groupBox);
+        adell->setObjectName("adell");
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Segoe UI Semibold")});
+        font.setPointSize(13);
+        adell->setFont(font);
+
+        horizontalLayout_2->addWidget(adell);
+
+        back = new QPushButton(groupBox);
         back->setObjectName("back");
 
         horizontalLayout_2->addWidget(back);
 
 
-        verticalLayout->addLayout(horizontalLayout_2);
+        verticalLayout->addWidget(groupBox);
 
 
         horizontalLayout->addLayout(verticalLayout);
@@ -99,6 +115,7 @@ public:
     {
         TicTacToeGame->setWindowTitle(QCoreApplication::translate("TicTacToeGame", "Tic Tac Toe", nullptr));
         reset->setText(QCoreApplication::translate("TicTacToeGame", "New Game", nullptr));
+        adell->setText(QCoreApplication::translate("TicTacToeGame", "Mike", nullptr));
         back->setText(QCoreApplication::translate("TicTacToeGame", "Back to title screen", nullptr));
     } // retranslateUi
 

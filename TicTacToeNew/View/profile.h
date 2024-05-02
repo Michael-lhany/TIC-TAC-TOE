@@ -3,6 +3,10 @@
 
 #include <QDialog>
 #include"TitleScreen.h"
+<<<<<<< HEAD
+#include"playerhistory.h"
+=======
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 namespace Ui {
 class Profile;
 }
@@ -18,6 +22,11 @@ public:
 private slots:
     void on_start_clicked();
 
+<<<<<<< HEAD
+    void on_profile_clicked();
+
+=======
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 private:
     Ui::Profile *ui;
 };

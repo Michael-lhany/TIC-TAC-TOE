@@ -33,7 +33,13 @@ INCLUDEPATH += \
 
 SOURCES += \
     View/mainpage.cpp \
+<<<<<<< HEAD
+    View/playerhistory.cpp \
     View/profile.cpp \
+    View/signup.cpp \
+=======
+    View/profile.cpp \
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
     main.cpp \
     AI/MiniMaxAgent.cpp \
     Model/Board.cpp \
@@ -51,13 +57,25 @@ HEADERS += \
     Controller/TTTController.h \
     TTTCommonTypes.h \
     View/mainpage.h \
+<<<<<<< HEAD
+    View/playerhistory.h \
+    View/profile.h \
+    View/signup.h
+=======
     View/profile.h
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 
 FORMS += \
     Forms/TicTacToeGame.ui \
     Forms/titlescreen.ui \
     View/mainpage.ui \
+<<<<<<< HEAD
+    View/playerhistory.ui \
+    View/profile.ui \
+    View/signup.ui
+=======
     View/profile.ui
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 
 RC_ICONS = images/icon.ico
 

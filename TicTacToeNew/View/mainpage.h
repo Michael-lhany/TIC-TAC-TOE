@@ -3,7 +3,11 @@
 
 #include <QMainWindow>
 #include"profile.h"
+<<<<<<< HEAD
+#include "signup.h"
+=======
 
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 namespace Ui {
 class MainPage;
 }
@@ -23,6 +27,15 @@ private slots:
 
     void on_pushButton_LogIn_pressed();
 
+<<<<<<< HEAD
+    void on_label_linkActivated(const QString &link);
+
+    void on_checkBox_showpassword_stateChanged(int arg1);
+
+    void on_pushButton_signup_clicked();
+
+=======
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 private:
     Ui::MainPage *ui;
 

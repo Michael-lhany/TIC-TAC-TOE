@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>signup</class>
+ <widget class="QDialog" name="signup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>645</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tic Tac Toe</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="appointment-new"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
+}</string>
+  </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Password</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_password">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>171</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>13</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Enter Password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_username">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>61</y>
+     <width>231</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>13</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Enter User Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>User Name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>229</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Conform password</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_password_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>260</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>13</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit
+{
+	background-color: #082336;
+	color: #3e93ff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #1e4b6d;
+	padding: 10px;
+
+}
+
+
+QLineEdit::hover
+{
+	background-color: #082336;
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}
+
+
+QLineEdit::focus
+{
+	
+	color: #3e93ca;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #01dcff;
+	padding: 10px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Enter Password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_LogIn">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>320</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-radius:15px;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Sign Up</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Photo">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>70</y>
+     <width>251</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

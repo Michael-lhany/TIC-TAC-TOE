@@ -25,6 +25,15 @@
   <property name="windowTitle">
    <string>Tic Tac Toe</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: #00111d;
+	color: #000000;
+	border-color: #000000;
+
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -76,6 +85,15 @@
           <bold>true</bold>
           <stylestrategy>PreferDefault</stylestrategy>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::NoFrame</enum>
@@ -131,6 +149,15 @@
                <pointsize>9</pointsize>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+             </property>
              <property name="text">
               <string>Board Size</string>
              </property>
@@ -143,6 +170,144 @@
              </property>
              <item>
               <widget class="QSlider" name="boardSize">
+               <property name="styleSheet">
+                <string notr="true">QSlider 
+{
+	background-color: transparent;
+
+}
+
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 5px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: #41cd52;
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #a9a9aa;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: #41cd52;
+	width: 14px;
+	margin-top: -6px;
+	margin-bottom: -6px;
+	border-radius: 3px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: #22af00;
+	border-radius: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}
+
+
+QSlider::groove:vertical 
+{
+	background-color: transparent;
+	width: 5px;
+
+}
+
+
+QSlider::sub-page:vertical 
+{
+	background-color: #41cd52;
+
+}
+
+
+QSlider::add-page:vertical 
+{
+	background-color: #a9a9aa;
+
+}
+
+
+QSlider::handle:vertical 
+{
+	background-color: #41cd52;
+	height: 14px;
+	margin-left: -6px;
+	margin-right: -6px;
+	border-radius: 3px;
+
+}
+
+
+QSlider::handle:vertical:hover 
+{
+	background-color: #22af00;
+	border-radius: 3px;
+
+}
+
+
+QSlider::sub-page:vertical:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:vertical:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:vertical:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}</string>
+               </property>
                <property name="minimum">
                 <number>3</number>
                </property>
@@ -174,6 +339,15 @@
                <pointsize>9</pointsize>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+             </property>
              <property name="text">
               <string>Number of Players</string>
              </property>
@@ -183,6 +357,62 @@
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
               <widget class="QRadioButton" name="onePlayer">
+               <property name="styleSheet">
+                <string notr="true">QRadioButton
+{
+    background-color: transparent;
+
+}
+
+
+QRadioButton::indicator::unchecked
+{ 
+	border: 1px inset gray; 
+	border-radius: 5px; 
+	background-color:  #a9a9aa;
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::indicator::unchecked:hover
+{ 
+	border: 1px inset #2aaaa8; 
+	border-radius: 5px; 
+	background-color: gray;
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::indicator::checked
+{ 
+	border: 1px solid #607cff; 
+	border-radius: 5px; 
+	background-color: #58fa53; 
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::disabled
+{
+	color: #656565;
+
+}
+
+
+QRadioButton::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 2px solid #656565;
+
+}</string>
+               </property>
                <property name="text">
                 <string>1 Player (vs AI)</string>
                </property>
@@ -193,6 +423,62 @@
              </item>
              <item>
               <widget class="QRadioButton" name="twoPlayers">
+               <property name="styleSheet">
+                <string notr="true">QRadioButton
+{
+    background-color: transparent;
+
+}
+
+
+QRadioButton::indicator::unchecked
+{ 
+	border: 1px inset gray; 
+	border-radius: 5px; 
+	background-color:  #a9a9aa;
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::indicator::unchecked:hover
+{ 
+	border: 1px inset #2aaaa8; 
+	border-radius: 5px; 
+	background-color: gray;
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::indicator::checked
+{ 
+	border: 1px solid #607cff; 
+	border-radius: 5px; 
+	background-color: #58fa53; 
+	width: 9px; 
+	height: 9px; 
+
+}
+
+
+QRadioButton::disabled
+{
+	color: #656565;
+
+}
+
+
+QRadioButton::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 2px solid #656565;
+
+}</string>
+               </property>
                <property name="text">
                 <string>2 Players</string>
                </property>
@@ -211,6 +497,15 @@
                <pointsize>9</pointsize>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+             </property>
              <property name="text">
               <string>AI starts first</string>
              </property>
@@ -220,6 +515,56 @@
             <widget class="QCheckBox" name="AIStarts">
              <property name="enabled">
               <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QCheckBox
+{
+    background-color: transparent;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(://checkbox.png);
+	background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}</string>
              </property>
              <property name="text">
               <string/>
@@ -234,8 +579,17 @@
                <pointsize>9</pointsize>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #717e87;
+	border-color: #000000;
+
+}</string>
+             </property>
              <property name="text">
-              <string>MiniMax Depth</string>
+              <string>Difficulty level</string>
              </property>
             </widget>
            </item>
@@ -248,6 +602,144 @@
               <widget class="QSlider" name="miniMaxDepth">
                <property name="enabled">
                 <bool>true</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QSlider 
+{
+	background-color: transparent;
+
+}
+
+QSlider::groove:horizontal 
+{
+	background-color: transparent;
+	height: 5px;
+
+}
+
+
+QSlider::sub-page:horizontal 
+{
+	background-color: #41cd52;
+
+}
+
+
+QSlider::add-page:horizontal 
+{
+	background-color: #a9a9aa;
+
+}
+
+
+QSlider::handle:horizontal 
+{
+	background-color: #41cd52;
+	width: 14px;
+	margin-top: -6px;
+	margin-bottom: -6px;
+	border-radius: 3px;
+
+}
+
+
+QSlider::handle:horizontal:hover 
+{
+	background-color: #22af00;
+	border-radius: 3px;
+
+}
+
+
+QSlider::sub-page:horizontal:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:horizontal:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:horizontal:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}
+
+
+QSlider::groove:vertical 
+{
+	background-color: transparent;
+	width: 5px;
+
+}
+
+
+QSlider::sub-page:vertical 
+{
+	background-color: #41cd52;
+
+}
+
+
+QSlider::add-page:vertical 
+{
+	background-color: #a9a9aa;
+
+}
+
+
+QSlider::handle:vertical 
+{
+	background-color: #41cd52;
+	height: 14px;
+	margin-left: -6px;
+	margin-right: -6px;
+	border-radius: 3px;
+
+}
+
+
+QSlider::handle:vertical:hover 
+{
+	background-color: #22af00;
+	border-radius: 3px;
+
+}
+
+
+QSlider::sub-page:vertical:disabled 
+{
+	background-color: #bbb;
+	border-color: #999;
+
+}
+
+
+QSlider::add-page:vertical:disabled 
+{
+	background-color: #eee;
+	border-color: #999;
+
+}
+
+
+QSlider::handle:vertical:disabled 
+{
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+
+}</string>
                </property>
                <property name="minimum">
                 <number>1</number>
@@ -275,13 +767,6 @@
              </item>
             </layout>
            </item>
-           <item row="4" column="0" colspan="2">
-            <widget class="QLabel" name="label_7">
-             <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#c10000;&quot;&gt;* Disclaimer: Increasing depth will affect performance &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-            </widget>
-           </item>
           </layout>
          </item>
         </layout>
@@ -306,8 +791,51 @@
           <property name="font">
            <font>
             <pointsize>12</pointsize>
+<<<<<<< HEAD
+            <bold>true</bold>
            </font>
           </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-radius:15px;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}</string>
+          </property>
+=======
+           </font>
+          </property>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
           <property name="text">
            <string>Start Game</string>
           </property>

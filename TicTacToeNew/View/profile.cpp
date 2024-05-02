@@ -20,3 +20,14 @@ void Profile::on_start_clicked()
     titlescreen->show();
 }
 
+<<<<<<< HEAD
+
+void Profile::on_profile_clicked()
+{
+    this->hide();
+    Playerhistory *playerhistory= new Playerhistory();
+    playerhistory->show();
+}
+
+=======
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d

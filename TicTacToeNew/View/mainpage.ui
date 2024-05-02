@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Tic Tac Toe</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="appointment-new"/>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget
@@ -26,10 +29,15 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
+      <x>180</x>
+      <y>179</y>
+=======
       <x>290</x>
       <y>160</y>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
       <width>160</width>
-      <height>40</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -58,10 +66,15 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
+      <x>180</x>
+      <y>289</y>
+=======
       <x>290</x>
       <y>270</y>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
       <width>160</width>
-      <height>40</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
@@ -90,9 +103,9 @@
    <widget class="QLineEdit" name="lineEdit_username">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>240</x>
       <y>210</y>
-      <width>400</width>
+      <width>281</width>
       <height>50</height>
      </rect>
     </property>
@@ -151,9 +164,9 @@ QLineEdit::focus
    <widget class="QLineEdit" name="lineEdit_password">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>240</x>
       <y>320</y>
-      <width>400</width>
+      <width>281</width>
       <height>50</height>
      </rect>
     </property>
@@ -213,8 +226,13 @@ QLineEdit::focus
    <widget class="QPushButton" name="pushButton_LogIn">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
+      <x>460</x>
+      <y>400</y>
+=======
       <x>570</x>
       <y>430</y>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
       <width>111</width>
       <height>51</height>
      </rect>
@@ -267,11 +285,19 @@ QPushButton::pressed
      <string>Log In</string>
     </property>
    </widget>
+<<<<<<< HEAD
+   <widget class="QPushButton" name="pushButton_signup">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>470</y>
+=======
    <widget class="QPushButton" name="pushButton_LogIn_3">
     <property name="geometry">
      <rect>
       <x>340</x>
       <y>430</y>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
       <width>201</width>
       <height>41</height>
      </rect>
@@ -324,6 +350,13 @@ QPushButton::pressed
      <string>Create New Account</string>
     </property>
    </widget>
+<<<<<<< HEAD
+   <widget class="QPushButton" name="pushButton_exit">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>70</y>
+=======
    <widget class="QToolButton" name="toolButton">
     <property name="geometry">
      <rect>
@@ -386,6 +419,7 @@ QToolButton::pressed
      <rect>
       <x>690</x>
       <y>60</y>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
       <width>51</width>
       <height>41</height>
      </rect>
@@ -441,7 +475,11 @@ QPushButton::pressed
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
+<<<<<<< HEAD
+      <x>130</x>
+=======
       <x>220</x>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
       <y>70</y>
       <width>141</width>
       <height>51</height>
@@ -470,6 +508,139 @@ QPushButton::pressed
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
+<<<<<<< HEAD
+   <widget class="QCheckBox" name="checkBox_showpassword">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>400</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox
+{
+	background-color: transparent;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;); /*To replace*/
+	background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Show password</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>430</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox
+{
+	background-color: transparent;
+	color: #717e87;
+	border-color: #000000;
+
+}
+
+
+QCheckBox::indicator
+{
+    color: #b1b1b1;
+    background-color: #00111d;
+    border: 1px solid #2aaaa8;
+    width: 12px;
+    height: 12px;
+
+}
+
+
+QCheckBox::indicator:checked
+{
+    image:url(&quot;./ressources/check.png&quot;); /*To replace*/
+	background-color: #1f2b2b;
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::indicator:unchecked:hover
+{
+    border: 1px solid #2aaaa8;
+
+}
+
+
+QCheckBox::disabled
+{
+	color: #656565;
+
+}
+
+
+QCheckBox::indicator:disabled
+{
+	background-color: #656565;
+	color: #656565;
+    border: 1px solid #656565;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Remeber me</string>
+    </property>
+   </widget>
+=======
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

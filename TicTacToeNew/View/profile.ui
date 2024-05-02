@@ -22,6 +22,15 @@
 
 }</string>
   </property>
+<<<<<<< HEAD
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>291</width>
+     <height>171</height>
+=======
   <widget class="QPushButton" name="start">
    <property name="geometry">
     <rect>
@@ -29,17 +38,75 @@
      <y>90</y>
      <width>171</width>
      <height>61</height>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
     </rect>
    </property>
    <property name="font">
     <font>
+<<<<<<< HEAD
+     <family>SimSun</family>
+=======
      <family>Arial</family>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
      <pointsize>12</pointsize>
      <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
+    <string notr="true">QGroupBox 
+{
+	background-color: #1f2b2b;
+    border: 1px inset #000;
+    margin-top: 22px;
+	margin-left: 1px;
+
+}
+
+
+QGroupBox::title  
+{
+    background-color: #1f2b2b;
+    color: #ffffff;
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+	margin-left: 1px;
+    padding: 5px;
+
+}
+
+
+QGroupBox::title::disabled
+{
+	background-color: #404040;
+	color: #656565;
+
+}</string>
+   </property>
+   <property name="title">
+    <string>         Welcome Back!</string>
+   </property>
+   <widget class="QPushButton" name="start">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+=======
     <string notr="true">QPushButton
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
 {
 	background-color: #3de6af;
 	color: #000000;
@@ -74,6 +141,103 @@ QPushButton::pressed
 	padding: 13px;
 
 }</string>
+<<<<<<< HEAD
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="profile">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>100</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #3de6af;
+	color: #000000;
+	border-style: solid;
+	border-radius:15px;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::hover
+{
+	background-color: #3dffaf;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}
+
+
+QPushButton::pressed
+{
+	background-color: #3dc8af;
+	color: #000000;
+	border-style: solid;
+	border-color: #000000;
+	font-weight : bold;
+	padding: 13px;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Profile</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>SimSun</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+
+}
+
+
+QLabel::disabled
+{
+	background-color: transparent;
+	color: #656565;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>Tic Tac Toe</string>
+=======
    </property>
    <property name="text">
     <string>Play</string>
@@ -134,6 +298,7 @@ QPushButton::pressed
    </property>
    <property name="text">
     <string>Profile</string>
+>>>>>>> d0fe8aef13dac56cc0444ec1b3f89ffb21a5452d
    </property>
   </widget>
  </widget>
