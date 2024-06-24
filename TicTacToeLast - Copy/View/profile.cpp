@@ -5,6 +5,7 @@
 #include <QPixmap>
 #include <QPainter>
 #include <QLabel>
+extern QString username;
 Profile::Profile(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Profile)
@@ -48,12 +49,16 @@ void Profile::on_start_clicked()
 
 
 void Profile::on_profile_clicked()
-{    qDebug() << "Start button clicked"; // Debug message
+{
     clickSound.play();  // Play the sound effect
-    qDebug() << "Sound played"; // Debug message
+
     this->hide();
     Playerhistory *playerhistory= new Playerhistory();
     playerhistory->show();
+    playerhistory->getUserStatistics(username);
+    playerhistory->getUserGames(username);
+    playerhistory->loadUserStatistics(username);
+    playerhistory->loadUserGames(username);
 }
 
 

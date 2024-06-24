@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>641</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,17 +16,19 @@
   <property name="styleSheet">
    <string notr="true">QWidget
 {
-	background-color: #00111d;
-	color: #000000;
-	border-color: #000000;
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0.100962 rgba(34, 166, 178, 255),stop:0.543269 rgba(132, 213, 51, 255),stop:1 rgba(208, 255, 163, 255));
+	color: #ffffff;
+	font-weight: bold;
+	border-color: #051a39;
+	selection-background-color: #3b7e48;
 
 }</string>
   </property>
   <widget class="QPushButton" name="return_2">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>230</y>
+     <x>270</x>
+     <y>340</y>
      <width>101</width>
      <height>41</height>
     </rect>
@@ -41,8 +43,8 @@
    <property name="styleSheet">
     <string notr="true">QPushButton
 {
-	background-color:#e3e3e3;
-	color: #1323ff;
+	background-color: #3de6af;
+	color: #000000;
 	border-style: solid;
 	border-radius:15px;
 	border-color: #000000;
@@ -82,10 +84,10 @@ QPushButton::pressed
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>40</y>
-     <width>191</width>
-     <height>91</height>
+     <x>100</x>
+     <y>0</y>
+     <width>501</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -179,7 +181,7 @@ QLabel::disabled
      <string>Games Played</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="gameplayedd">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -208,11 +210,11 @@ QLabel::disabled
      <string>0</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="drawsLabel">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>60</y>
+      <x>170</x>
+      <y>90</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -237,6 +239,145 @@ QLabel::disabled
      <string>0</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+
+}
+
+
+QLabel::disabled
+{
+	background-color: transparent;
+	color: #656565;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Games Drawn</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="winsLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+
+}
+
+
+QLabel::disabled
+{
+	background-color: transparent;
+	color: #656565;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>60</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+
+}
+
+
+QLabel::disabled
+{
+	background-color: transparent;
+	color: #656565;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Games Lose</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lossesLabel">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>90</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: transparent;
+	color: #ffffff;
+
+}
+
+
+QLabel::disabled
+{
+	background-color: transparent;
+	color: #656565;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="gameComboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
   </widget>
  </widget>
  <resources/>

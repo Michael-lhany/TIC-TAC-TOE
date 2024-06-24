@@ -6,6 +6,11 @@
 #include "signup.h"
 #include <QSoundEffect>  // Include QSound
 #include <QLabel>
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QMessageBox>
+#include <QString>
+
 namespace Ui {
 class MainPage;
 }
@@ -34,10 +39,16 @@ private slots:
 
     void on_pushButton_signup_clicked();
 
+    void on_label_5_linkActivated(const QString &link);
+    bool verifyLogin(const QString& username, const QString& password);
+
+
+
 private:
     Ui::MainPage *ui;
     QSoundEffect clickSound;  // Add a member for the sound effect
     void setMainPageBackground();
+    QSqlDatabase m_db;
 
 signals:
 /**

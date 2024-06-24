@@ -3,8 +3,9 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
 QT       += multimedia
+
+QT       += core gui sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Qt-Tic-Tac-Toe
@@ -36,6 +37,7 @@ SOURCES += \
     View/profile.cpp \
     View/signup.cpp \
     howtoplay.cpp \
+    lastpositiondisplay.cpp \
     main.cpp \
     AI/MiniMaxAgent.cpp \
     Model/Board.cpp \
@@ -57,7 +59,8 @@ HEADERS += \
     View/playerhistory.h \
     View/profile.h \
     View/signup.h \
-    howtoplay.h
+    howtoplay.h \
+    lastpositiondisplay.h
 
 FORMS += \
     Forms/TicTacToeGame.ui \
@@ -66,7 +69,8 @@ FORMS += \
     View/playerhistory.ui \
     View/profile.ui \
     View/signup.ui \
-    howtoplay.ui
+    howtoplay.ui \
+    lastpositiondisplay.ui
 
 
 RC_ICONS = images/icon.ico

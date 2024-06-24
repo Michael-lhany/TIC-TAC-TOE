@@ -2,8 +2,7 @@
 #include "TTTController.h"
 #include "starthistory.h"
 #include"Global_variables.h"
-
-bool Ai_checked = true;
+bool Ai_checked;
 
 TitleScreen::TitleScreen(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::TitleScreen)
@@ -58,9 +57,12 @@ void TitleScreen::updateTwoPlayers(bool checked)
 void TitleScreen::updateAIstartsGame(bool checked)
 {
     if (checked)
-        options_.AIstarts = true;
+    {options_.AIstarts = true;
+        Ai_checked=true;
+    }
     else
-        options_.AIstarts = false;
+    {options_.AIstarts = false; Ai_checked=false;
+    }
 }
 
 void TitleScreen::updateMiniMaxDepth(int depth)

@@ -52,6 +52,7 @@ public:
 
     void reset(vector<Cell> &cells);
     void updatePlayerNames();
+    QString getPlayerStyleSheet(BoardMarks currentPlayer);
 
 private:
     int counterX = 0;  // Counter for Player 1 wins
@@ -79,7 +80,7 @@ private:
      * @param currentPlayer: the current player's mark (X or O).
      * @return a QString stylesheet of the player given in the input.
      */
-    QString getPlayerStyleSheet(BoardMarks currentPlayer);
+
     /**
      * @brief getBoardFinalStateText converts a state to a decleration text,
      * that will be used when declaring the final state of a game.

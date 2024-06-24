@@ -3,6 +3,7 @@ release/playerhistory.o
 release/profile.o
 release/signup.o
 release/howtoplay.o
+release/lastpositiondisplay.o
 release/main.o
 release/MiniMaxAgent.o
 release/Board.o
@@ -18,3 +19,4 @@ release/moc_playerhistory.o
 release/moc_profile.o
 release/moc_signup.o
 release/moc_howtoplay.o
+release/moc_lastpositiondisplay.o

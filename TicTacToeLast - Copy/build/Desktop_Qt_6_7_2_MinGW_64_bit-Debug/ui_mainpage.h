@@ -46,7 +46,7 @@ public:
     QLineEdit *lineEdit_username;
     QLineEdit *lineEdit_password;
     QPushButton *pushButton_exit;
-    QLabel *label_6;
+    QLabel *label_7;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -174,7 +174,7 @@ public:
         checkBox_showpassword->setStyleSheet(QString::fromUtf8("QCheckBox\n"
 "{\n"
 "	background-color: transparent;\n"
-"	color: #000000;\n"
+"	color: #031cfc;\n"
 "	border-color: #000000;\n"
 "\n"
 "}\n"
@@ -230,7 +230,7 @@ public:
         checkBox_2->setStyleSheet(QString::fromUtf8("QCheckBox\n"
 "{\n"
 "	background-color: transparent;\n"
-"	color: #000000;\n"
+"	color: #031cfc;\n"
 "	border-color: #000000;\n"
 "\n"
 "}\n"
@@ -290,6 +290,8 @@ public:
         verticalLayout_4->setObjectName("verticalLayout_4");
         label_5 = new QLabel(layoutWidget2);
         label_5->setObjectName("label_5");
+        label_5->setEnabled(true);
+        label_5->setMinimumSize(QSize(0, 0));
         QFont font2;
         font2.setFamilies({QString::fromUtf8("SimSun")});
         font2.setPointSize(14);
@@ -297,8 +299,8 @@ public:
         label_5->setFont(font2);
         label_5->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
-"	background-color: #00111d;\n"
-"	color: #ffffff;\n"
+"	background-color: #e3e3e3;\n"
+"	color: #031cfc;\n"
 "	border-color: #000000;\n"
 "\n"
 "}"));
@@ -311,8 +313,8 @@ public:
         label_4->setFont(font2);
         label_4->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
-"	background-color: #00111d;\n"
-"	color: #ffffff;\n"
+"	background-color: #e3e3e3;\n"
+"	color: #031cfc;\n"
 "	border-color: #000000;\n"
 "\n"
 "}"));
@@ -464,22 +466,24 @@ public:
 "	padding: 13px;\n"
 "\n"
 "}"));
-        label_6 = new QLabel(centralwidget);
-        label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(120, 50, 141, 51));
+        label_7 = new QLabel(centralwidget);
+        label_7->setObjectName("label_7");
+        label_7->setEnabled(true);
+        label_7->setGeometry(QRect(140, 50, 111, 51));
+        label_7->setMinimumSize(QSize(0, 0));
         QFont font6;
         font6.setFamilies({QString::fromUtf8("SimSun")});
-        font6.setPointSize(27);
+        font6.setPointSize(22);
         font6.setBold(true);
-        label_6->setFont(font6);
-        label_6->setStyleSheet(QString::fromUtf8("QLabel\n"
+        label_7->setFont(font6);
+        label_7->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
-"	background-color: #00111d;\n"
-"	color: #ffffff;\n"
+"	background-color: #e3e3e3;\n"
+"	color: #031cfc;\n"
 "	border-color: #000000;\n"
 "\n"
 "}"));
-        label_6->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        label_7->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         MainPage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainPage);
         menubar->setObjectName("menubar");
@@ -508,7 +512,7 @@ public:
         lineEdit_password->setText(QString());
         lineEdit_password->setPlaceholderText(QCoreApplication::translate("MainPage", "Enter Password", nullptr));
         pushButton_exit->setText(QCoreApplication::translate("MainPage", "x", nullptr));
-        label_6->setText(QCoreApplication::translate("MainPage", "Sign In", nullptr));
+        label_7->setText(QCoreApplication::translate("MainPage", "Sign In", nullptr));
     } // retranslateUi
 
 };

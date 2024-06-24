@@ -3,6 +3,8 @@
 #include "TTTCommonTypes.h"
 #include <QtGlobal>
 #include <vector>
+#include <QString>
+#include "TicTacToeGame.h"
 
 using std::vector;
 
@@ -29,6 +31,9 @@ protected: // Data
     size_t boardSize_;
 
 public:
+    Board();
+    void last_board_postition();
+    QString Send_last_board_postition();
     /**
      * @brief Constructs a board given a board size.
      * @param size is the number of rows or columns in the board.
@@ -60,7 +65,7 @@ public:
      * the function can evaluate to X wins or O wins or a Tie or No Winner.
      * @return the state of the current board.
      */
-    virtual BoardState evaluateBoard() const;
+    virtual BoardState evaluateBoard();
     /**
      * @brief setPlayerInput sets the board with the mark given in the specified location.
      * after boundary checking the input row and column, and if the game hasen't reached a final state.
@@ -94,6 +99,8 @@ public:
      * @return the size of the board i.e. numebr of rows or columns.
      */
     size_t size() const;
+
+
 #ifdef QT_DEBUG
     virtual void printBoard () const;
 #endif

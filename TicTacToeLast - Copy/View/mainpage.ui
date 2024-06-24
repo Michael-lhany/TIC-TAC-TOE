@@ -168,7 +168,7 @@ QPushButton::pressed
         <string notr="true">QCheckBox
 {
 	background-color: transparent;
-	color: #000000;
+	color: #031cfc;
 	border-color: #000000;
 
 }
@@ -233,7 +233,7 @@ QCheckBox::indicator:disabled
         <string notr="true">QCheckBox
 {
 	background-color: transparent;
-	color: #000000;
+	color: #031cfc;
 	border-color: #000000;
 
 }
@@ -302,6 +302,15 @@ QCheckBox::indicator:disabled
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
         <widget class="QLabel" name="label_5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
          <property name="font">
           <font>
            <family>SimSun</family>
@@ -312,8 +321,8 @@ QCheckBox::indicator:disabled
          <property name="styleSheet">
           <string notr="true">QLabel
 {
-	background-color: #00111d;
-	color: #ffffff;
+	background-color: #e3e3e3;
+	color: #031cfc;
 	border-color: #000000;
 
 }</string>
@@ -338,8 +347,8 @@ QCheckBox::indicator:disabled
          <property name="styleSheet">
           <string notr="true">QLabel
 {
-	background-color: #00111d;
-	color: #ffffff;
+	background-color: #e3e3e3;
+	color: #031cfc;
 	border-color: #000000;
 
 }</string>
@@ -534,27 +543,36 @@ QPushButton::pressed
      <string>x</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="label_7">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>140</x>
       <y>50</y>
-      <width>141</width>
+      <width>111</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="font">
      <font>
       <family>SimSun</family>
-      <pointsize>27</pointsize>
+      <pointsize>22</pointsize>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel
 {
-	background-color: #00111d;
-	color: #ffffff;
+	background-color: #e3e3e3;
+	color: #031cfc;
 	border-color: #000000;
 
 }</string>

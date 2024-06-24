@@ -294,7 +294,7 @@ QLineEdit::focus
     </item>
    </layout>
   </widget>
-  <widget class="QPushButton" name="pushButton_LogIn">
+  <widget class="QPushButton" name="pushButton_Register">
    <property name="geometry">
     <rect>
      <x>210</x>

@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
@@ -25,24 +26,32 @@ public:
     QGroupBox *groupBox;
     QLabel *label;
     QLabel *label_2;
-    QLabel *label_3;
-    QLabel *label_4;
+    QLabel *gameplayedd;
+    QLabel *drawsLabel;
+    QLabel *label_5;
+    QLabel *winsLabel;
+    QLabel *label_7;
+    QLabel *lossesLabel;
+    QLabel *name;
+    QComboBox *gameComboBox;
 
     void setupUi(QDialog *Playerhistory)
     {
         if (Playerhistory->objectName().isEmpty())
             Playerhistory->setObjectName("Playerhistory");
-        Playerhistory->resize(400, 300);
+        Playerhistory->resize(641, 400);
         Playerhistory->setStyleSheet(QString::fromUtf8("QWidget\n"
 "{\n"
-"	background-color: #00111d;\n"
-"	color: #000000;\n"
-"	border-color: #000000;\n"
+"	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0.100962 rgba(34, 166, 178, 255),stop:0.543269 rgba(132, 213, 51, 255),stop:1 rgba(208, 255, 163, 255));\n"
+"	color: #ffffff;\n"
+"	font-weight: bold;\n"
+"	border-color: #051a39;\n"
+"	selection-background-color: #3b7e48;\n"
 "\n"
 "}"));
         return_2 = new QPushButton(Playerhistory);
         return_2->setObjectName("return_2");
-        return_2->setGeometry(QRect(150, 230, 101, 41));
+        return_2->setGeometry(QRect(270, 340, 101, 41));
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial")});
         font.setPointSize(12);
@@ -50,8 +59,8 @@ public:
         return_2->setFont(font);
         return_2->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
-"	background-color:#e3e3e3;\n"
-"	color: #1323ff;\n"
+"	background-color: #3de6af;\n"
+"	color: #000000;\n"
 "	border-style: solid;\n"
 "	border-radius:15px;\n"
 "	border-color: #000000;\n"
@@ -85,7 +94,7 @@ public:
 "}"));
         groupBox = new QGroupBox(Playerhistory);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(30, 40, 191, 91));
+        groupBox->setGeometry(QRect(100, 0, 501, 131));
         groupBox->setStyleSheet(QString::fromUtf8("QGroupBox \n"
 "{\n"
 "	background-color: #1f2b2b;\n"
@@ -148,10 +157,10 @@ public:
 "	color: #656565;\n"
 "\n"
 "}"));
-        label_3 = new QLabel(groupBox);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(100, 30, 81, 31));
-        label_3->setStyleSheet(QString::fromUtf8("QLabel\n"
+        gameplayedd = new QLabel(groupBox);
+        gameplayedd->setObjectName("gameplayedd");
+        gameplayedd->setGeometry(QRect(100, 30, 81, 31));
+        gameplayedd->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
 "	background-color: transparent;\n"
 "	color: #ffffff;\n"
@@ -165,10 +174,10 @@ public:
 "	color: #656565;\n"
 "\n"
 "}"));
-        label_4 = new QLabel(groupBox);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(100, 60, 81, 31));
-        label_4->setStyleSheet(QString::fromUtf8("QLabel\n"
+        drawsLabel = new QLabel(groupBox);
+        drawsLabel->setObjectName("drawsLabel");
+        drawsLabel->setGeometry(QRect(170, 90, 81, 31));
+        drawsLabel->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
 "	background-color: transparent;\n"
 "	color: #ffffff;\n"
@@ -182,6 +191,80 @@ public:
 "	color: #656565;\n"
 "\n"
 "}"));
+        label_5 = new QLabel(groupBox);
+        label_5->setObjectName("label_5");
+        label_5->setGeometry(QRect(170, 60, 81, 31));
+        label_5->setStyleSheet(QString::fromUtf8("QLabel\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #ffffff;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QLabel::disabled\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #656565;\n"
+"\n"
+"}"));
+        winsLabel = new QLabel(groupBox);
+        winsLabel->setObjectName("winsLabel");
+        winsLabel->setGeometry(QRect(10, 90, 81, 31));
+        winsLabel->setStyleSheet(QString::fromUtf8("QLabel\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #ffffff;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QLabel::disabled\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #656565;\n"
+"\n"
+"}"));
+        label_7 = new QLabel(groupBox);
+        label_7->setObjectName("label_7");
+        label_7->setGeometry(QRect(360, 60, 81, 31));
+        label_7->setStyleSheet(QString::fromUtf8("QLabel\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #ffffff;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QLabel::disabled\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #656565;\n"
+"\n"
+"}"));
+        lossesLabel = new QLabel(groupBox);
+        lossesLabel->setObjectName("lossesLabel");
+        lossesLabel->setGeometry(QRect(360, 90, 81, 31));
+        lossesLabel->setStyleSheet(QString::fromUtf8("QLabel\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #ffffff;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QLabel::disabled\n"
+"{\n"
+"	background-color: transparent;\n"
+"	color: #656565;\n"
+"\n"
+"}"));
+        name = new QLabel(groupBox);
+        name->setObjectName("name");
+        name->setGeometry(QRect(90, 0, 71, 21));
+        gameComboBox = new QComboBox(Playerhistory);
+        gameComboBox->setObjectName("gameComboBox");
+        gameComboBox->setGeometry(QRect(30, 140, 601, 21));
 
         retranslateUi(Playerhistory);
 
@@ -195,8 +278,13 @@ public:
         groupBox->setTitle(QCoreApplication::translate("Playerhistory", "Player Name", nullptr));
         label->setText(QCoreApplication::translate("Playerhistory", "Games Won", nullptr));
         label_2->setText(QCoreApplication::translate("Playerhistory", "Games Played", nullptr));
-        label_3->setText(QCoreApplication::translate("Playerhistory", "0", nullptr));
-        label_4->setText(QCoreApplication::translate("Playerhistory", "0", nullptr));
+        gameplayedd->setText(QCoreApplication::translate("Playerhistory", "0", nullptr));
+        drawsLabel->setText(QCoreApplication::translate("Playerhistory", "0", nullptr));
+        label_5->setText(QCoreApplication::translate("Playerhistory", "Games Drawn", nullptr));
+        winsLabel->setText(QCoreApplication::translate("Playerhistory", "0", nullptr));
+        label_7->setText(QCoreApplication::translate("Playerhistory", "Games Lose", nullptr));
+        lossesLabel->setText(QCoreApplication::translate("Playerhistory", "0", nullptr));
+        name->setText(QString());
     } // retranslateUi
 
 };

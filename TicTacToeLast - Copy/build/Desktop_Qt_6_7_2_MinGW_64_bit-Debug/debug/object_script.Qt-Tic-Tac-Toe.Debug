@@ -3,6 +3,7 @@ debug/playerhistory.o
 debug/profile.o
 debug/signup.o
 debug/howtoplay.o
+debug/lastpositiondisplay.o
 debug/main.o
 debug/MiniMaxAgent.o
 debug/Board.o
@@ -18,3 +19,4 @@ debug/moc_playerhistory.o
 debug/moc_profile.o
 debug/moc_signup.o
 debug/moc_howtoplay.o
+debug/moc_lastpositiondisplay.o

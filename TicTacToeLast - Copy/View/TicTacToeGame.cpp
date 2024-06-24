@@ -3,7 +3,15 @@
 #include <QMessageBox>
 #include <QPushButton>
 #include"Global_variables.h"
-
+#include "TTTCommonTypes.h"
+#include "playerhistory.h"
+#include "Board.h"
+#include "mainpage.h"
+#include "signup.h"
+#include "TitleScreen.h"
+extern bool Ai_checked;
+extern QString last_position;
+extern QString username;
 TicTacToeGame::TicTacToeGame(QWidget *parent)
     : QDialog(parent), ui(new Ui::TicTacToeGame)
 {
@@ -171,17 +179,40 @@ void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
 }
 
 QString TicTacToeGame::getBoardFinalStateText(BoardState boardState)
-{
+{Playerhistory store_game;
+    QString lastposition;
+    QString result;
     switch (boardState) {
     case BoardState::XWins:
+        lastposition = last_position;
+        qDebug()<< Ai_checked;
         counterX++;
         ui->adell->setText(QString("Player 1 : %1").arg(counterX));  // Update Player 1 counter label
+        if(Ai_checked){
+            result = "loss";}
+        else{
+            result = "win";}
+        qDebug()<<username;
+        store_game.recordGame(username, result, lastposition);
         return "player X wins!";
     case BoardState::OWins:
         counterO++;
         updatePlayerNames();  // Update Player 2 counter label
+        lastposition = last_position;
+        qDebug()<< Ai_checked;
+        if(Ai_checked){
+            result = "win";}
+        else{
+            result = "loss";}
+        qDebug()<<username;
+        store_game.recordGame(username, result, lastposition);
         return "player O wins!";
     case BoardState::Tie:
+        lastposition = last_position;
+        qDebug()<< Ai_checked;
+        result = "tie";
+        qDebug()<<username;
+        store_game.recordGame(username, result, lastposition);
         return "it's a tie!";
     default:
         return "";

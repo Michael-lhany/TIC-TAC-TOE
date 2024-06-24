@@ -36,7 +36,7 @@ public:
     QLineEdit *lineEdit_username;
     QLineEdit *lineEdit_password;
     QLineEdit *lineEdit_password_2;
-    QPushButton *pushButton_LogIn;
+    QPushButton *pushButton_Register;
 
     void setupUi(QDialog *signup)
     {
@@ -251,20 +251,20 @@ public:
 
         horizontalLayout->addLayout(verticalLayout_2);
 
-        pushButton_LogIn = new QPushButton(signup);
-        pushButton_LogIn->setObjectName("pushButton_LogIn");
-        pushButton_LogIn->setGeometry(QRect(210, 340, 217, 49));
+        pushButton_Register = new QPushButton(signup);
+        pushButton_Register->setObjectName("pushButton_Register");
+        pushButton_Register->setGeometry(QRect(210, 340, 217, 49));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton_LogIn->sizePolicy().hasHeightForWidth());
-        pushButton_LogIn->setSizePolicy(sizePolicy);
+        sizePolicy.setHeightForWidth(pushButton_Register->sizePolicy().hasHeightForWidth());
+        pushButton_Register->setSizePolicy(sizePolicy);
         QFont font3;
         font3.setFamilies({QString::fromUtf8("SimSun")});
         font3.setPointSize(15);
         font3.setBold(true);
-        pushButton_LogIn->setFont(font3);
-        pushButton_LogIn->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        pushButton_Register->setFont(font3);
+        pushButton_Register->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	background-color:#e3e3e3;\n"
 "	color: #1323ff;\n"
@@ -317,7 +317,7 @@ public:
         lineEdit_password->setPlaceholderText(QCoreApplication::translate("signup", "Enter Password", nullptr));
         lineEdit_password_2->setText(QString());
         lineEdit_password_2->setPlaceholderText(QCoreApplication::translate("signup", "Enter Password", nullptr));
-        pushButton_LogIn->setText(QCoreApplication::translate("signup", "Sign Up", nullptr));
+        pushButton_Register->setText(QCoreApplication::translate("signup", "Sign Up", nullptr));
     } // retranslateUi
 
 };

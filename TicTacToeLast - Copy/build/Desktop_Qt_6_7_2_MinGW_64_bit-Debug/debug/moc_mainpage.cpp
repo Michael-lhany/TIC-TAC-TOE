@@ -46,7 +46,11 @@ constexpr auto qt_meta_stringdata_CLASSMainPageENDCLASS = QtMocHelpers::stringDa
     "link",
     "on_checkBox_showpassword_stateChanged",
     "arg1",
-    "on_pushButton_signup_clicked"
+    "on_pushButton_signup_clicked",
+    "on_label_5_linkActivated",
+    "verifyLogin",
+    "username",
+    "password"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -59,7 +63,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainPageENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -67,15 +71,17 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainPageENDCLASS[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   56,    2, 0x06,    1 /* Public */,
+       1,    0,   68,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    0,   57,    2, 0x08,    2 /* Private */,
-       4,    0,   58,    2, 0x08,    3 /* Private */,
-       5,    0,   59,    2, 0x08,    4 /* Private */,
-       6,    1,   60,    2, 0x08,    5 /* Private */,
-       8,    1,   63,    2, 0x08,    7 /* Private */,
-      10,    0,   66,    2, 0x08,    9 /* Private */,
+       3,    0,   69,    2, 0x08,    2 /* Private */,
+       4,    0,   70,    2, 0x08,    3 /* Private */,
+       5,    0,   71,    2, 0x08,    4 /* Private */,
+       6,    1,   72,    2, 0x08,    5 /* Private */,
+       8,    1,   75,    2, 0x08,    7 /* Private */,
+      10,    0,   78,    2, 0x08,    9 /* Private */,
+      11,    1,   79,    2, 0x08,   10 /* Private */,
+      12,    2,   82,    2, 0x08,   12 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -87,6 +93,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainPageENDCLASS[] = {
     QMetaType::Void, QMetaType::QString,    7,
     QMetaType::Void, QMetaType::Int,    9,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Bool, QMetaType::QString, QMetaType::QString,   13,   14,
 
        0        // eod
 };
@@ -115,7 +123,14 @@ Q_CONSTINIT const QMetaObject MainPage::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'on_pushButton_signup_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_label_5_linkActivated'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'verifyLogin'
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
@@ -133,6 +148,9 @@ void MainPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 4: _t->on_label_linkActivated((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 5: _t->on_checkBox_showpassword_stateChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 6: _t->on_pushButton_signup_clicked(); break;
+        case 7: _t->on_label_5_linkActivated((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 8: { bool _r = _t->verifyLogin((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -166,13 +184,13 @@ int MainPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 9;
     }
     return _id;
 }
