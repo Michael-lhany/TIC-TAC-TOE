@@ -34,16 +34,10 @@ public:
         if (Profile->objectName().isEmpty())
             Profile->setObjectName("Profile");
         Profile->resize(529, 439);
-        Profile->setStyleSheet(QString::fromUtf8("QWidget\n"
-"{\n"
-"	background-color: #00111d;\n"
-"	color: #000000;\n"
-"	border-color: #000000;\n"
-"\n"
-"}"));
+        Profile->setStyleSheet(QString::fromUtf8(""));
         groupBox = new QGroupBox(Profile);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(60, 90, 401, 291));
+        groupBox->setGeometry(QRect(110, 80, 311, 291));
         QFont font;
         font.setFamilies({QString::fromUtf8("SimSun")});
         font.setPointSize(12);
@@ -75,7 +69,7 @@ public:
 "}"));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(120, 60, 181, 151));
+        layoutWidget->setGeometry(QRect(70, 50, 181, 151));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -170,7 +164,7 @@ public:
 
         how = new QPushButton(groupBox);
         how->setObjectName("how");
-        how->setGeometry(QRect(140, 220, 141, 41));
+        how->setGeometry(QRect(90, 210, 141, 41));
         sizePolicy.setHeightForWidth(how->sizePolicy().hasHeightForWidth());
         how->setSizePolicy(sizePolicy);
         how->setFont(font);

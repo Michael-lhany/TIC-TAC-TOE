@@ -5,5 +5,8 @@
         <file>images/xoxo-vsauce.gif</file>
         <file>images/tic.gif</file>
         <file>images/click_sound.wav</file>
+        <file>images/new.jpg</file>
+        <file>images/new2.jpg</file>
+        <file>images/new3.jpg</file>
     </qresource>
 </RCC>

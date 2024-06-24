@@ -17,47 +17,9 @@
    <iconset theme="appointment-new"/>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget
-{
-	background-color: #00111d;
-	color: #ffffff;
-	border-color: #000000;
-
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>30</y>
-      <width>171</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>27</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel
-{
-	background-color: #00111d;
-	color: #ffffff;
-	border-color: #000000;
-
-}</string>
-    </property>
-    <property name="text">
-     <string>Sign In</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
@@ -196,11 +158,17 @@ QPushButton::pressed
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QCheckBox" name="checkBox_showpassword">
+       <property name="font">
+        <font>
+         <family>SimSun</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QCheckBox
 {
 	background-color: transparent;
-	color: #ffffff;
+	color: #000000;
 	border-color: #000000;
 
 }
@@ -255,11 +223,17 @@ QCheckBox::indicator:disabled
      </item>
      <item>
       <widget class="QCheckBox" name="checkBox_2">
+       <property name="font">
+        <font>
+         <family>SimSun</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QCheckBox
 {
 	background-color: transparent;
-	color: #ffffff;
+	color: #000000;
 	border-color: #000000;
 
 }
@@ -330,7 +304,7 @@ QCheckBox::indicator:disabled
         <widget class="QLabel" name="label_5">
          <property name="font">
           <font>
-           <family>Arial</family>
+           <family>SimSun</family>
            <pointsize>14</pointsize>
            <bold>true</bold>
           </font>
@@ -356,7 +330,7 @@ QCheckBox::indicator:disabled
         <widget class="QLabel" name="label_4">
          <property name="font">
           <font>
-           <family>Arial</family>
+           <family>SimSun</family>
            <pointsize>14</pointsize>
            <bold>true</bold>
           </font>
@@ -386,7 +360,7 @@ QCheckBox::indicator:disabled
         <widget class="QLineEdit" name="lineEdit_username">
          <property name="font">
           <font>
-           <family>Arial</family>
+           <family>SimSun</family>
            <pointsize>13</pointsize>
            <italic>false</italic>
            <bold>true</bold>
@@ -441,7 +415,7 @@ QLineEdit::focus
         <widget class="QLineEdit" name="lineEdit_password">
          <property name="font">
           <font>
-           <family>Arial</family>
+           <family>SimSun</family>
            <pointsize>13</pointsize>
            <bold>true</bold>
           </font>
@@ -558,6 +532,38 @@ QPushButton::pressed
     </property>
     <property name="text">
      <string>x</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>50</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>SimSun</family>
+      <pointsize>27</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+	background-color: #00111d;
+	color: #ffffff;
+	border-color: #000000;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign In</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
   </widget>

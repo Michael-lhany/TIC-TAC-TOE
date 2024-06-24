@@ -164,7 +164,10 @@ release/qrc_resources.cpp: ../../resources.qrc \
 		../../images/icon1.png \
 		../../images/tic.gif \
 		../../images/xoxo-vsauce.gif \
+		../../images/new.jpg \
 		../../images/click_sound.wav \
+		../../images/new2.jpg \
+		../../images/new3.jpg \
 		../../images/icon.png
 	C:\Qt\6.7.2\mingw_64\bin\rcc.exe -name resources --no-zstd ..\..\resources.qrc -o release\qrc_resources.cpp
 
@@ -387,6 +390,12 @@ release/moc_TicTacToeGame.cpp: ../../View/TicTacToeGame.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
 		release/moc_predefs.h \
 		C:/Qt/6.7.2/mingw_64/bin/moc.exe
 	C:\Qt\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include "C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/AI" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/Model" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/View" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/Controller" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/Forms" -IC:/Qt/6.7.2/mingw_64/include -IC:/Qt/6.7.2/mingw_64/include/QtMultimedia -IC:/Qt/6.7.2/mingw_64/include/QtWidgets -IC:/Qt/6.7.2/mingw_64/include/QtGui -IC:/Qt/6.7.2/mingw_64/include/QtNetwork -IC:/Qt/6.7.2/mingw_64/include/QtCore -I. -I"D:\VISUAL STUDIO\VC\Tools\MSVC\14.39.33519\include" -I"D:\VISUAL STUDIO\VC\Tools\MSVC\14.39.33519\ATLMFC\include" -I"D:\VISUAL STUDIO\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" ..\..\View\TicTacToeGame.h -o release\moc_TicTacToeGame.cpp
@@ -616,13 +625,13 @@ release/moc_TitleScreen.cpp: ../../View/TitleScreen.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QDialog \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialog.h \
 		../../View/TitleScreen.h \
-		../../View/playerhistory.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+		../../View/playerhistory.h \
 		../../howtoplay.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/QMovie \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qmovie.h \
@@ -858,6 +867,12 @@ release/moc_TTTController.cpp: ../../Controller/TTTController.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
 		release/moc_predefs.h \
 		C:/Qt/6.7.2/mingw_64/bin/moc.exe
 	C:\Qt\6.7.2\mingw_64\bin\moc.exe $(DEFINES) --include "C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release/moc_predefs.h" -IC:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/AI" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/Model" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/View" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/Controller" -I"C:/Users/hp/Desktop/Last/TicTacToeLast - Copy/Forms" -IC:/Qt/6.7.2/mingw_64/include -IC:/Qt/6.7.2/mingw_64/include/QtMultimedia -IC:/Qt/6.7.2/mingw_64/include/QtWidgets -IC:/Qt/6.7.2/mingw_64/include/QtGui -IC:/Qt/6.7.2/mingw_64/include/QtNetwork -IC:/Qt/6.7.2/mingw_64/include/QtCore -I. -I"D:\VISUAL STUDIO\VC\Tools\MSVC\14.39.33519\include" -I"D:\VISUAL STUDIO\VC\Tools\MSVC\14.39.33519\ATLMFC\include" -I"D:\VISUAL STUDIO\VC\Auxiliary\VS\include" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt" -I"C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt" ..\..\Controller\TTTController.h -o release\moc_TTTController.cpp
@@ -1087,13 +1102,13 @@ release/moc_mainpage.cpp: ../../View/mainpage.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
-		../../View/playerhistory.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+		../../View/playerhistory.h \
 		../../howtoplay.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/QMovie \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qmovie.h \
@@ -2245,13 +2260,13 @@ release/mainpage.o: ../../View/mainpage.cpp ../../View/mainpage.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
-		../../View/playerhistory.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+		../../View/playerhistory.h \
 		../../howtoplay.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/QMovie \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qmovie.h \
@@ -2285,7 +2300,11 @@ release/mainpage.o: ../../View/mainpage.cpp ../../View/mainpage.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
-		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPalette \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPixmap \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qpainter.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainpage.o ..\..\View\mainpage.cpp
 
 release/playerhistory.o: ../../View/playerhistory.cpp ../../View/playerhistory.h \
@@ -2763,13 +2782,13 @@ release/profile.o: ../../View/profile.cpp ../../View/profile.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractslider.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
-		../../View/playerhistory.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
 		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
+		../../View/playerhistory.h \
 		../../howtoplay.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/QMovie \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qmovie.h \
@@ -2788,13 +2807,12 @@ release/profile.o: ../../View/profile.cpp ../../View/profile.h \
 		C:/Qt/6.7.2/mingw_64/include/QtCore/q20algorithm.h \
 		C:/Qt/6.7.2/mingw_64/include/QtCore/qfactoryinterface.h \
 		ui_profile.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
-		C:/Qt/6.7.2/mingw_64/include/QtCore/qmetaobject.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QAudioOutput \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudiooutput.h
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPalette \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPixmap \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qpainter.h \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qpen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\profile.o ..\..\View\profile.cpp
 
 release/signup.o: ../../View/signup.cpp ../../View/signup.h \
@@ -3445,6 +3463,12 @@ release/main.o: ../../main.cpp ../../View/TicTacToeGame.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
 		../../View/TitleScreen.h \
 		ui_titlescreen.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QCheckBox \
@@ -3463,12 +3487,6 @@ release/main.o: ../../main.cpp ../../View/TicTacToeGame.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
 		../../View/profile.h \
 		../../View/playerhistory.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
-		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
 		../../howtoplay.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/QMovie \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qmovie.h \
@@ -3887,6 +3905,12 @@ release/TicTacToeGame.o: ../../View/TicTacToeGame.cpp ../../View/TicTacToeGame.h
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
@@ -4366,6 +4390,12 @@ release/TTTController.o: ../../Controller/TTTController.cpp ../../Controller/TTT
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QSoundEffect \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qsoundeffect.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qaudio.h \
 		../../AI/MiniMaxAgent.h \
 		../../AI/NoAgent.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\TTTController.o ..\..\Controller\TTTController.cpp

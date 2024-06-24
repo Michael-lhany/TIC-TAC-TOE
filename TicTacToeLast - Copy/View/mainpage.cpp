@@ -2,6 +2,10 @@
 #include "ui_mainpage.h"
 #include <QMessageBox>
 #include <QApplication>
+#include <QPalette>
+#include <QPixmap>
+#include <QPainter>
+#include <QLabel>
 MainPage::MainPage(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainPage)
@@ -10,13 +14,27 @@ MainPage::MainPage(QWidget *parent)
     setWindowIcon(QIcon(":/images/images/icon1.png"));
     clickSound.setSource(QUrl::fromLocalFile(":/images/images/click_sound.wav"));
     clickSound.setVolume(0.1f);  // Set volume to 25%
+
 }
 
 MainPage::~MainPage()
 {
     delete ui;
 }
+void MainPage::resizeEvent(QResizeEvent *event)
+{
+    QMainWindow::resizeEvent(event);
+    setMainPageBackground(); // Ensure the background image resizes with the window
+}
+void MainPage::setMainPageBackground()
+{
+    QPixmap background(":/images/images/new.jpg");
+    background = background.scaled(this->size(), Qt::IgnoreAspectRatio);
 
+    QPalette palette;
+    palette.setBrush(QPalette::Window, background);
+    this->setPalette(palette);
+}
 void MainPage::on_pushButton_LogIn_clicked()
 {
     QString username,password;
@@ -89,7 +107,7 @@ border-color: #000000;
 void MainPage::on_pushButton_exit_clicked()
 {  clickSound.play();
     QMessageBox::StandardButton replay;
-    replay= QMessageBox:: question(this,"EXIT","Are you sure to close the app",QMessageBox::Yes | QMessageBox::No);
+    replay= QMessageBox:: question(this,"EXIT","Are you sure to close the app?!",QMessageBox::Yes | QMessageBox::No);
     if(replay == QMessageBox::Yes)
     {
         QApplication::quit();

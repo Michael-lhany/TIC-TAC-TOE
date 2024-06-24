@@ -29,7 +29,6 @@ class Ui_MainPage
 {
 public:
     QWidget *centralwidget;
-    QLabel *label_6;
     QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton_LogIn;
@@ -47,6 +46,7 @@ public:
     QLineEdit *lineEdit_username;
     QLineEdit *lineEdit_password;
     QPushButton *pushButton_exit;
+    QLabel *label_6;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -57,31 +57,9 @@ public:
         MainPage->resize(675, 514);
         QIcon icon(QIcon::fromTheme(QString::fromUtf8("appointment-new")));
         MainPage->setWindowIcon(icon);
-        MainPage->setStyleSheet(QString::fromUtf8("QWidget\n"
-"{\n"
-"	background-color: #00111d;\n"
-"	color: #ffffff;\n"
-"	border-color: #000000;\n"
-"\n"
-"}"));
+        MainPage->setStyleSheet(QString::fromUtf8(""));
         centralwidget = new QWidget(MainPage);
         centralwidget->setObjectName("centralwidget");
-        label_6 = new QLabel(centralwidget);
-        label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(50, 30, 171, 51));
-        QFont font;
-        font.setFamilies({QString::fromUtf8("Arial")});
-        font.setPointSize(27);
-        font.setBold(true);
-        label_6->setFont(font);
-        label_6->setStyleSheet(QString::fromUtf8("QLabel\n"
-"{\n"
-"	background-color: #00111d;\n"
-"	color: #ffffff;\n"
-"	border-color: #000000;\n"
-"\n"
-"}"));
-        label_6->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setGeometry(QRect(390, 350, 219, 105));
@@ -95,11 +73,11 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(pushButton_LogIn->sizePolicy().hasHeightForWidth());
         pushButton_LogIn->setSizePolicy(sizePolicy);
-        QFont font1;
-        font1.setFamilies({QString::fromUtf8("SimSun")});
-        font1.setPointSize(12);
-        font1.setBold(true);
-        pushButton_LogIn->setFont(font1);
+        QFont font;
+        font.setFamilies({QString::fromUtf8("SimSun")});
+        font.setPointSize(12);
+        font.setBold(true);
+        pushButton_LogIn->setFont(font);
         pushButton_LogIn->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	background-color:#e3e3e3;\n"
@@ -142,7 +120,7 @@ public:
         pushButton_signup->setObjectName("pushButton_signup");
         sizePolicy.setHeightForWidth(pushButton_signup->sizePolicy().hasHeightForWidth());
         pushButton_signup->setSizePolicy(sizePolicy);
-        pushButton_signup->setFont(font1);
+        pushButton_signup->setFont(font);
         pushButton_signup->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "	background-color:#e3e3e3;\n"
@@ -189,10 +167,14 @@ public:
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         checkBox_showpassword = new QCheckBox(layoutWidget1);
         checkBox_showpassword->setObjectName("checkBox_showpassword");
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("SimSun")});
+        font1.setPointSize(12);
+        checkBox_showpassword->setFont(font1);
         checkBox_showpassword->setStyleSheet(QString::fromUtf8("QCheckBox\n"
 "{\n"
 "	background-color: transparent;\n"
-"	color: #ffffff;\n"
+"	color: #000000;\n"
 "	border-color: #000000;\n"
 "\n"
 "}\n"
@@ -244,10 +226,11 @@ public:
 
         checkBox_2 = new QCheckBox(layoutWidget1);
         checkBox_2->setObjectName("checkBox_2");
+        checkBox_2->setFont(font1);
         checkBox_2->setStyleSheet(QString::fromUtf8("QCheckBox\n"
 "{\n"
 "	background-color: transparent;\n"
-"	color: #ffffff;\n"
+"	color: #000000;\n"
 "	border-color: #000000;\n"
 "\n"
 "}\n"
@@ -308,7 +291,7 @@ public:
         label_5 = new QLabel(layoutWidget2);
         label_5->setObjectName("label_5");
         QFont font2;
-        font2.setFamilies({QString::fromUtf8("Arial")});
+        font2.setFamilies({QString::fromUtf8("SimSun")});
         font2.setPointSize(14);
         font2.setBold(true);
         label_5->setFont(font2);
@@ -345,7 +328,7 @@ public:
         lineEdit_username = new QLineEdit(layoutWidget2);
         lineEdit_username->setObjectName("lineEdit_username");
         QFont font3;
-        font3.setFamilies({QString::fromUtf8("Arial")});
+        font3.setFamilies({QString::fromUtf8("SimSun")});
         font3.setPointSize(13);
         font3.setBold(true);
         font3.setItalic(false);
@@ -391,7 +374,7 @@ public:
         lineEdit_password = new QLineEdit(layoutWidget2);
         lineEdit_password->setObjectName("lineEdit_password");
         QFont font4;
-        font4.setFamilies({QString::fromUtf8("Arial")});
+        font4.setFamilies({QString::fromUtf8("SimSun")});
         font4.setPointSize(13);
         font4.setBold(true);
         lineEdit_password->setFont(font4);
@@ -481,6 +464,22 @@ public:
 "	padding: 13px;\n"
 "\n"
 "}"));
+        label_6 = new QLabel(centralwidget);
+        label_6->setObjectName("label_6");
+        label_6->setGeometry(QRect(120, 50, 141, 51));
+        QFont font6;
+        font6.setFamilies({QString::fromUtf8("SimSun")});
+        font6.setPointSize(27);
+        font6.setBold(true);
+        label_6->setFont(font6);
+        label_6->setStyleSheet(QString::fromUtf8("QLabel\n"
+"{\n"
+"	background-color: #00111d;\n"
+"	color: #ffffff;\n"
+"	border-color: #000000;\n"
+"\n"
+"}"));
+        label_6->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         MainPage->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainPage);
         menubar->setObjectName("menubar");
@@ -498,7 +497,6 @@ public:
     void retranslateUi(QMainWindow *MainPage)
     {
         MainPage->setWindowTitle(QCoreApplication::translate("MainPage", "Tic Tac Toe", nullptr));
-        label_6->setText(QCoreApplication::translate("MainPage", "Sign In", nullptr));
         pushButton_LogIn->setText(QCoreApplication::translate("MainPage", "Log In", nullptr));
         pushButton_signup->setText(QCoreApplication::translate("MainPage", "Create New Account", nullptr));
         checkBox_showpassword->setText(QCoreApplication::translate("MainPage", "Show password", nullptr));
@@ -510,6 +508,7 @@ public:
         lineEdit_password->setText(QString());
         lineEdit_password->setPlaceholderText(QCoreApplication::translate("MainPage", "Enter Password", nullptr));
         pushButton_exit->setText(QCoreApplication::translate("MainPage", "x", nullptr));
+        label_6->setText(QCoreApplication::translate("MainPage", "Sign In", nullptr));
     } // retranslateUi
 
 };

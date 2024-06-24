@@ -5,6 +5,7 @@
 #include"profile.h"
 #include "signup.h"
 #include <QSoundEffect>  // Include QSound
+#include <QLabel>
 namespace Ui {
 class MainPage;
 }
@@ -13,9 +14,12 @@ class MainPage : public QMainWindow
 {
     Q_OBJECT
 
+
 public:
     explicit MainPage(QWidget *parent = nullptr);
     ~MainPage();
+protected:
+    void resizeEvent(QResizeEvent *event) override; // Declare resizeEvent here
 
 private slots:
     void on_pushButton_LogIn_clicked();
@@ -33,6 +37,7 @@ private slots:
 private:
     Ui::MainPage *ui;
     QSoundEffect clickSound;  // Add a member for the sound effect
+    void setMainPageBackground();
 
 signals:
 /**

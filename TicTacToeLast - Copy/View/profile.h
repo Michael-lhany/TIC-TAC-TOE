@@ -6,6 +6,7 @@
 #include"playerhistory.h"
 #include"howtoplay.h"
 #include <QSoundEffect>  // Include QSound
+#include <QLabel>
 namespace Ui {
 class Profile;
 }
@@ -17,6 +18,8 @@ class Profile : public QDialog
 public:
     explicit Profile(QWidget *parent = nullptr);
     ~Profile();
+protected:
+    void resizeEvent(QResizeEvent *event) override;
 
 private slots:
     void on_start_clicked();
@@ -26,10 +29,11 @@ private slots:
     void on_how_clicked();
 
     void on_groupBox_clicked();
-
 private:
     Ui::Profile *ui;
    QSoundEffect clickSound;  // Add a member for the sound effect
+    QLabel *backgroundLabel;
+    void setMainPageBackground();
 };
 
 #endif // PROFILE_H
