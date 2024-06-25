@@ -9,6 +9,7 @@
 #include "mainpage.h"
 #include "signup.h"
 #include "TitleScreen.h"
+#include <QMediaPlayer>
 extern bool Ai_checked;
 extern QString last_position;
 extern QString username;
@@ -23,8 +24,12 @@ TicTacToeGame::TicTacToeGame(QWidget *parent)
     setWindowIcon(QIcon(":/images/images/icon1.png"));
     clickSound.setSource(QUrl::fromLocalFile(":/images/images/click_sound.wav"));
     clickSound.setVolume(0.1f);  // Set volume to 25%
-    clickSound2.setSource(QUrl::fromLocalFile(":/images/images/goodresult.mp3"));
+    clickSound2.setSource(QUrl::fromLocalFile(":/images/images/goodresult.wav"));
     clickSound2.setVolume(0.1f);  // Set volume to 25%
+    clickSound3.setSource(QUrl::fromLocalFile(":/images/images/fail.wav"));
+    clickSound3.setVolume(0.1f);  // Set volume to 25%
+    clickSound4.setSource(QUrl::fromLocalFile(":/images/images/draw.wav"));
+    clickSound4.setVolume(0.1f);  // Set volume to 25%
     QString buttonStyle = R"(
         QPushButton {
             background-color: #e3e3e3;
@@ -214,6 +219,7 @@ QString TicTacToeGame::getBoardFinalStateText(BoardState boardState)
         store_game.recordGame(username, result, lastposition);
         return "Player O wins!";
     case BoardState::Tie:
+        updatePlayerNames();  // Update Player 2 counter label
         lastposition = last_position;
         qDebug() << Ai_checked;
         result = "tie";
@@ -239,7 +245,15 @@ void TicTacToeGame::updatePlayerNames()
 void TicTacToeGame::declareGameState(BoardState boardState)
 {
     QMessageBox resultBox;
-    clickSound2.play();
+    if (boardState == BoardState::XWins) {
+        clickSound2.play();  // Play sound effect only when Player X wins
+    }
+    if (boardState == BoardState::OWins) {
+        clickSound3.play();  // Play sound effect only when Player X wins
+    }
+    if (boardState == BoardState::Tie) {
+        clickSound4.play();  // Play sound effect only when Player X wins
+    }
     resultBox.setWindowTitle("                        Game Result");
     resultBox.setWindowIcon(QIcon(":/images/images/icon1.png"));
     resultBox.setText("Game over, " + getBoardFinalStateText(boardState));

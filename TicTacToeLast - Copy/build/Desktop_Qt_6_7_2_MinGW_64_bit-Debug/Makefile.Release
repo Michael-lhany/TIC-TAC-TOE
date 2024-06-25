@@ -169,10 +169,13 @@ release/qrc_resources.cpp: ../../resources.qrc \
 		C:/Qt/6.7.2/mingw_64/bin/rcc.exe \
 		../../images/icon1.png \
 		../../images/tic.gif \
+		../../images/fail.wav \
 		../../images/xoxo-vsauce.gif \
 		../../images/new.jpg \
+		../../images/draw.wav \
 		../../images/click_sound.wav \
-		../../images/goodresult.mp3 \
+		../../images/win.wav \
+		../../images/goodresult.wav \
 		../../images/new2.jpg \
 		../../images/new3.jpg \
 		../../images/icon.png
@@ -6432,7 +6435,11 @@ release/TicTacToeGame.o: ../../View/TicTacToeGame.cpp ../../View/TicTacToeGame.h
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qmovie.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qimagereader.h \
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qimageiohandler.h \
-		../../View/signup.h
+		../../View/signup.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/6.7.2/mingw_64/include/QtMultimedia/qtaudio.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\TicTacToeGame.o ..\..\View\TicTacToeGame.cpp
 
 release/TitleScreen.o: ../../View/TitleScreen.cpp ../../View/TitleScreen.h \

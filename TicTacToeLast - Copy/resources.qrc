@@ -8,6 +8,9 @@
         <file>images/new.jpg</file>
         <file>images/new2.jpg</file>
         <file>images/new3.jpg</file>
-        <file>images/goodresult.mp3</file>
+        <file>images/win.wav</file>
+        <file>images/goodresult.wav</file>
+        <file>images/fail.wav</file>
+        <file>images/draw.wav</file>
     </qresource>
 </RCC>
