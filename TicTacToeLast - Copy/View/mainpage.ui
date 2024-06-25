@@ -168,7 +168,7 @@ QPushButton::pressed
         <string notr="true">QCheckBox
 {
 	background-color: transparent;
-	color: #031cfc;
+	color: #FFFFFF;
 	border-color: #000000;
 
 }
@@ -233,7 +233,7 @@ QCheckBox::indicator:disabled
         <string notr="true">QCheckBox
 {
 	background-color: transparent;
-	color: #031cfc;
+	color: #FFFFFF;
 	border-color: #000000;
 
 }
@@ -321,8 +321,8 @@ QCheckBox::indicator:disabled
          <property name="styleSheet">
           <string notr="true">QLabel
 {
-	background-color: #e3e3e3;
-	color: #031cfc;
+	background-color: transparent;;
+	color: #ffffff;
 	border-color: #000000;
 
 }</string>
@@ -347,8 +347,8 @@ QCheckBox::indicator:disabled
          <property name="styleSheet">
           <string notr="true">QLabel
 {
-	background-color: #e3e3e3;
-	color: #031cfc;
+	background-color:transparent;
+	color: #ffffff;
 	border-color: #000000;
 
 }</string>
@@ -549,8 +549,8 @@ QPushButton::pressed
     </property>
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>50</y>
+      <x>70</x>
+      <y>60</y>
       <width>111</width>
       <height>51</height>
      </rect>
@@ -571,8 +571,8 @@ QPushButton::pressed
     <property name="styleSheet">
      <string notr="true">QLabel
 {
-	background-color: #e3e3e3;
-	color: #031cfc;
+	background-color: transparent;
+	color: #FFFFFF;
 	border-color: #000000;
 
 }</string>

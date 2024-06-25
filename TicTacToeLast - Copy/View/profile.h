@@ -7,6 +7,7 @@
 #include"howtoplay.h"
 #include <QSoundEffect>  // Include QSound
 #include <QLabel>
+#include"mainpage.h"
 namespace Ui {
 class Profile;
 }
@@ -25,6 +26,7 @@ private slots:
     void on_start_clicked();
 
     void on_profile_clicked();
+    void on_logOut_clicked();
 
     void on_how_clicked();
 

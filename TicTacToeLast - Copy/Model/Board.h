@@ -5,7 +5,7 @@
 #include <vector>
 #include <QString>
 #include "TicTacToeGame.h"
-
+#include <QSoundEffect>
 using std::vector;
 
 /**

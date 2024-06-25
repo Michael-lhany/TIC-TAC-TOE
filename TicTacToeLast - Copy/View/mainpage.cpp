@@ -76,7 +76,7 @@ void MainPage::resizeEvent(QResizeEvent *event)
 }
 void MainPage::setMainPageBackground()
 {
-    QPixmap background(":/images/images/new.jpg");
+    QPixmap background(":/images/images/back2.jpg");
     background = background.scaled(this->size(), Qt::IgnoreAspectRatio);
 
     QPalette palette;

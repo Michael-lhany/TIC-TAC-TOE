@@ -291,8 +291,11 @@ Makefile: ../../../../TicTacToetest/main.pro C:/Qt/6.7.2/mingw_64/mkspecs/win32-
 		C:/Qt/6.7.2/mingw_64/mkspecs/features/yacc.prf \
 		C:/Qt/6.7.2/mingw_64/mkspecs/features/lex.prf \
 		../../../../TicTacToetest/main.pro \
+		C:/Qt/6.7.2/mingw_64/lib/Qt6Multimedia.prl \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Widgets.prl \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Gui.prl \
+		C:/Qt/6.7.2/mingw_64/lib/Qt6Network.prl \
+		C:/Qt/6.7.2/mingw_64/lib/Qt6Sql.prl \
 		C:/Qt/6.7.2/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.7.2/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\..\..\..\TicTacToetest\main.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -517,8 +520,11 @@ C:/Qt/6.7.2/mingw_64/mkspecs/features/exceptions.prf:
 C:/Qt/6.7.2/mingw_64/mkspecs/features/yacc.prf:
 C:/Qt/6.7.2/mingw_64/mkspecs/features/lex.prf:
 ../../../../TicTacToetest/main.pro:
+C:/Qt/6.7.2/mingw_64/lib/Qt6Multimedia.prl:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Widgets.prl:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Gui.prl:
+C:/Qt/6.7.2/mingw_64/lib/Qt6Network.prl:
+C:/Qt/6.7.2/mingw_64/lib/Qt6Sql.prl:
 C:/Qt/6.7.2/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.7.2/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE

@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "QtMultimedia/qsoundeffect.h"
 #include "TTTCommonTypes.h"
 #include "ui_TicTacToeGame.h"
 #include <QDialog>

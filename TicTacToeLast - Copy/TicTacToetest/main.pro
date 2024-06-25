@@ -1,6 +1,8 @@
 GOOGLETEST_DIR = C:\Users\hp\Desktop\Last\googletest-main
 
-QT       += core gui
+QT       += multimedia
+
+QT       += core gui sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 include(gtest_dependency.pri)

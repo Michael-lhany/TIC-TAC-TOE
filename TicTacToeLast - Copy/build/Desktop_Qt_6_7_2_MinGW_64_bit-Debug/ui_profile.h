@@ -28,6 +28,7 @@ public:
     QPushButton *start;
     QPushButton *profile;
     QPushButton *how;
+    QPushButton *logOut;
 
     void setupUi(QDialog *Profile)
     {
@@ -37,7 +38,7 @@ public:
         Profile->setStyleSheet(QString::fromUtf8(""));
         groupBox = new QGroupBox(Profile);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(110, 80, 311, 291));
+        groupBox->setGeometry(QRect(110, 80, 311, 311));
         QFont font;
         font.setFamilies({QString::fromUtf8("SimSun")});
         font.setPointSize(12);
@@ -203,6 +204,47 @@ public:
 "	padding: 13px;\n"
 "\n"
 "}"));
+        logOut = new QPushButton(groupBox);
+        logOut->setObjectName("logOut");
+        logOut->setGeometry(QRect(110, 260, 101, 41));
+        sizePolicy.setHeightForWidth(logOut->sizePolicy().hasHeightForWidth());
+        logOut->setSizePolicy(sizePolicy);
+        logOut->setFont(font);
+        logOut->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{\n"
+"	background-color:#e3e3e3;\n"
+"	color: #1323ff;\n"
+"	border-style: solid;\n"
+"	border-radius:15px;\n"
+"	border-color: #000000;\n"
+"	font-weight : bold;\n"
+"	padding: 13px;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton::hover\n"
+"{\n"
+"	background-color: #3dffaf;\n"
+"	color: #000000;\n"
+"	border-style: solid;\n"
+"	border-color: #000000;\n"
+"	font-weight : bold;\n"
+"	padding: 13px;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton::pressed\n"
+"{\n"
+"	background-color: #3dc8af;\n"
+"	color: #000000;\n"
+"	border-style: solid;\n"
+"	border-color: #000000;\n"
+"	font-weight : bold;\n"
+"	padding: 13px;\n"
+"\n"
+"}"));
 
         retranslateUi(Profile);
 
@@ -214,8 +256,9 @@ public:
         Profile->setWindowTitle(QCoreApplication::translate("Profile", "Dialog", nullptr));
         groupBox->setTitle(QCoreApplication::translate("Profile", "Welcome Back!", nullptr));
         start->setText(QCoreApplication::translate("Profile", "Play", nullptr));
-        profile->setText(QCoreApplication::translate("Profile", "Profile", nullptr));
+        profile->setText(QCoreApplication::translate("Profile", "Player History", nullptr));
         how->setText(QCoreApplication::translate("Profile", "How to play", nullptr));
+        logOut->setText(QCoreApplication::translate("Profile", "Log Out", nullptr));
     } // retranslateUi
 
 };

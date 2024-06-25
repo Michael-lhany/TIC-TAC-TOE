@@ -46,7 +46,13 @@ void Profile::on_start_clicked()
     TitleScreen *titlescreen= new TitleScreen();
     titlescreen->show();
 }
+void Profile::on_logOut_clicked()
+{    clickSound.play();  // Play the sound effect
 
+    this->hide();
+    MainPage *mainpage= new MainPage();
+    mainpage->show();
+}
 
 void Profile::on_profile_clicked()
 {

@@ -174,7 +174,7 @@ public:
         checkBox_showpassword->setStyleSheet(QString::fromUtf8("QCheckBox\n"
 "{\n"
 "	background-color: transparent;\n"
-"	color: #031cfc;\n"
+"	color: #FFFFFF;\n"
 "	border-color: #000000;\n"
 "\n"
 "}\n"
@@ -230,7 +230,7 @@ public:
         checkBox_2->setStyleSheet(QString::fromUtf8("QCheckBox\n"
 "{\n"
 "	background-color: transparent;\n"
-"	color: #031cfc;\n"
+"	color: #FFFFFF;\n"
 "	border-color: #000000;\n"
 "\n"
 "}\n"
@@ -299,8 +299,8 @@ public:
         label_5->setFont(font2);
         label_5->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
-"	background-color: #e3e3e3;\n"
-"	color: #031cfc;\n"
+"	background-color: transparent;;\n"
+"	color: #ffffff;\n"
 "	border-color: #000000;\n"
 "\n"
 "}"));
@@ -313,8 +313,8 @@ public:
         label_4->setFont(font2);
         label_4->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
-"	background-color: #e3e3e3;\n"
-"	color: #031cfc;\n"
+"	background-color:transparent;\n"
+"	color: #ffffff;\n"
 "	border-color: #000000;\n"
 "\n"
 "}"));
@@ -469,7 +469,7 @@ public:
         label_7 = new QLabel(centralwidget);
         label_7->setObjectName("label_7");
         label_7->setEnabled(true);
-        label_7->setGeometry(QRect(140, 50, 111, 51));
+        label_7->setGeometry(QRect(70, 60, 111, 51));
         label_7->setMinimumSize(QSize(0, 0));
         QFont font6;
         font6.setFamilies({QString::fromUtf8("SimSun")});
@@ -478,8 +478,8 @@ public:
         label_7->setFont(font6);
         label_7->setStyleSheet(QString::fromUtf8("QLabel\n"
 "{\n"
-"	background-color: #e3e3e3;\n"
-"	color: #031cfc;\n"
+"	background-color: transparent;\n"
+"	color: #FFFFFF;\n"
 "	border-color: #000000;\n"
 "\n"
 "}"));

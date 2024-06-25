@@ -47,7 +47,8 @@ constexpr auto qt_meta_stringdata_CLASSTitleScreenENDCLASS = QtMocHelpers::strin
     "updateAIstartsGame",
     "updateMiniMaxDepth",
     "depth",
-    "startGame"
+    "startGame",
+    "newButton"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -60,7 +61,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTitleScreenENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -68,15 +69,16 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTitleScreenENDCLASS[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   56,    2, 0x06,    1 /* Public */,
+       1,    0,   62,    2, 0x06,    1 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    1,   57,    2, 0x0a,    2 /* Public */,
-       5,    1,   60,    2, 0x0a,    4 /* Public */,
-       7,    1,   63,    2, 0x0a,    6 /* Public */,
-       8,    1,   66,    2, 0x0a,    8 /* Public */,
-       9,    1,   69,    2, 0x0a,   10 /* Public */,
-      11,    0,   72,    2, 0x0a,   12 /* Public */,
+       3,    1,   63,    2, 0x0a,    2 /* Public */,
+       5,    1,   66,    2, 0x0a,    4 /* Public */,
+       7,    1,   69,    2, 0x0a,    6 /* Public */,
+       8,    1,   72,    2, 0x0a,    8 /* Public */,
+       9,    1,   75,    2, 0x0a,   10 /* Public */,
+      11,    0,   78,    2, 0x0a,   12 /* Public */,
+      12,    0,   79,    2, 0x0a,   13 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -87,6 +89,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTitleScreenENDCLASS[] = {
     QMetaType::Void, QMetaType::Bool,    6,
     QMetaType::Void, QMetaType::Bool,    6,
     QMetaType::Void, QMetaType::Int,   10,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -119,6 +122,8 @@ Q_CONSTINIT const QMetaObject TitleScreen::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'startGame'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'newButton'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -137,6 +142,7 @@ void TitleScreen::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 4: _t->updateAIstartsGame((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         case 5: _t->updateMiniMaxDepth((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 6: _t->startGame(); break;
+        case 7: _t->newButton(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -170,13 +176,13 @@ int TitleScreen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 8)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }
