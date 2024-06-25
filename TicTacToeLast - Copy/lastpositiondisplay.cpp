@@ -6,6 +6,8 @@ lastpositiondisplay::lastpositiondisplay(QWidget *parent)
     , ui(new Ui::lastpositiondisplay)
 {
     ui->setupUi(this);
+    setWindowIcon(QIcon(":/images/images/icon1.png"));
+    setWindowTitle("Tic Tac Toe");  // Set the custom title text
 }
 
 lastpositiondisplay::~lastpositiondisplay()

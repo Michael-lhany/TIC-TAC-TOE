@@ -32,7 +32,8 @@ public:
     QString getLastBoardPosition(int gameId);
     QList<QPair<int, QString>> getUserGames( QString &username);
     QMap<QString, int> getUserStatistics( QString &username);
-
+protected:
+    void resizeEvent(QResizeEvent *event) override; // Declare resizeEvent here
 private slots:
     void on_return_2_clicked();
 
@@ -40,6 +41,7 @@ private:
     Ui::Playerhistory *ui;
     QSoundEffect clickSound;  // Add a member for the sound effect
     QSqlDatabase m_db;
+    void setMainPageBackground();
 };
 
 #endif // PLAYERHISTORY_H

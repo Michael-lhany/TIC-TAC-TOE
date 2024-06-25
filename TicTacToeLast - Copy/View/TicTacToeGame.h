@@ -58,6 +58,7 @@ private:
     int counterX = 0;  // Counter for Player 1 wins
     int counterO = 0;  // Counter for Player 2 wins or AI wins
     QSoundEffect clickSound;  // Add a member for the sound effect
+    QSoundEffect clickSound2;  // Add a member for the sound effect
     void handleResetButton();
     void handleBackButton();
     /**

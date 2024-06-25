@@ -172,6 +172,7 @@ release/qrc_resources.cpp: ../../resources.qrc \
 		../../images/xoxo-vsauce.gif \
 		../../images/new.jpg \
 		../../images/click_sound.wav \
+		../../images/goodresult.mp3 \
 		../../images/new2.jpg \
 		../../images/new3.jpg \
 		../../images/icon.png
@@ -3883,7 +3884,12 @@ release/playerhistory.o: ../../View/playerhistory.cpp ../../View/playerhistory.h
 		../../View/TicTacToeGame.h \
 		../../ui_TicTacToeGame.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGridLayout \
-		../../lastpositiondisplay.h
+		../../lastpositiondisplay.h \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPalette \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/QPainter \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qpainter.h \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.7.2/mingw_64/include/QtGui/qpen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\playerhistory.o ..\..\View\playerhistory.cpp
 
 release/profile.o: ../../View/profile.cpp ../../View/profile.h \
@@ -5121,7 +5127,18 @@ release/lastpositiondisplay.o: ../../lastpositiondisplay.cpp ../../lastpositiond
 		C:/Qt/6.7.2/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
 		C:/Qt/6.7.2/mingw_64/include/QtCore/QString \
-		ui_lastpositiondisplay.h
+		ui_lastpositiondisplay.h \
+		C:/Qt/6.7.2/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QGridLayout \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.7.2/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\lastpositiondisplay.o ..\..\lastpositiondisplay.cpp
 
 release/main.o: ../../main.cpp ../../View/TicTacToeGame.h \

@@ -7,6 +7,9 @@
 #include <QCryptographicHash>
 #include "Board.h"
 #include "lastpositiondisplay.h"
+#include <QPalette>
+#include <QPixmap>
+#include <QPainter>
 Playerhistory::Playerhistory(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Playerhistory)
@@ -49,7 +52,20 @@ Playerhistory::~Playerhistory()
 {
     delete ui;
 }
+void Playerhistory::resizeEvent(QResizeEvent *event)
+{
+    QDialog::resizeEvent(event);
+    setMainPageBackground(); // Ensure the background image resizes with the window
+}
+void Playerhistory::setMainPageBackground()
+{
+    QPixmap background(":/images/images/new3.jpg");
+    background = background.scaled(this->size(), Qt::IgnoreAspectRatio);
 
+    QPalette palette;
+    palette.setBrush(QPalette::Window, background);
+    this->setPalette(palette);
+}
 void Playerhistory::on_return_2_clicked()
 { clickSound.play();
     this->hide();

@@ -2,7 +2,7 @@
 #include "ui_TicTacToeGame.h"
 #include <QMessageBox>
 #include <QPushButton>
-#include"Global_variables.h"
+#include "Global_variables.h"
 #include "TTTCommonTypes.h"
 #include "playerhistory.h"
 #include "Board.h"
@@ -12,6 +12,7 @@
 extern bool Ai_checked;
 extern QString last_position;
 extern QString username;
+
 TicTacToeGame::TicTacToeGame(QWidget *parent)
     : QDialog(parent), ui(new Ui::TicTacToeGame)
 {
@@ -19,8 +20,11 @@ TicTacToeGame::TicTacToeGame(QWidget *parent)
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
     ui->setupUi(this);
     setConnections();
+    setWindowIcon(QIcon(":/images/images/icon1.png"));
     clickSound.setSource(QUrl::fromLocalFile(":/images/images/click_sound.wav"));
     clickSound.setVolume(0.1f);  // Set volume to 25%
+    clickSound2.setSource(QUrl::fromLocalFile(":/images/images/goodresult.mp3"));
+    clickSound2.setVolume(0.1f);  // Set volume to 25%
     QString buttonStyle = R"(
         QPushButton {
             background-color: #e3e3e3;
@@ -53,7 +57,7 @@ TicTacToeGame::TicTacToeGame(QWidget *parent)
 
     ui->reset->setStyleSheet(buttonStyle);
     ui->back->setStyleSheet(buttonStyle);
-     ui->groupBox->setMinimumSize(200, 100);
+    ui->groupBox->setMinimumSize(200, 100);
     QVBoxLayout *verticalLayoutWithSpacer = new QVBoxLayout();
     QSpacerItem *spacer = new QSpacerItem(0, 10, QSizePolicy::Minimum, QSizePolicy::Expanding);
     verticalLayoutWithSpacer->addItem(spacer);
@@ -70,7 +74,6 @@ TicTacToeGame::TicTacToeGame(QWidget *parent)
 
     // Add the new vertical layout with spacer to the horizontal layout
     ui->horizontalLayout_2->addLayout(verticalLayoutWithSpacer);
-
 }
 
 void TicTacToeGame::setConnections()
@@ -91,6 +94,7 @@ void TicTacToeGame::handleBackButton()
     clickSound.play();
     close();  // Close the game dialog
 }
+
 vector<Cell> TicTacToeGame::buildCellButtons(size_t boardSize)
 {
     vector<Cell> cells;
@@ -156,7 +160,7 @@ QString TicTacToeGame::getPlayerStyleSheet(BoardMarks currentPlayer)
 void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
 {
     QString markText;
-    if(!Ai_checked){
+    if (!Ai_checked) {
         switch (currentPlayer) {
         case BoardMarks::Empty:
             markText = "Empty";
@@ -167,11 +171,10 @@ void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
         case BoardMarks::O:
             markText = "Player O";
             break;
-        }}else{
-        markText ="Ai mode";
+        }
+    } else {
+        markText = "Ai mode";
     }
-
-
 
     // Update Cell button in GUI
     cell.cellBtn->setStyleSheet(getPlayerStyleSheet(currentPlayer));
@@ -179,45 +182,49 @@ void TicTacToeGame::updateCell(Cell &cell, BoardMarks currentPlayer)
 }
 
 QString TicTacToeGame::getBoardFinalStateText(BoardState boardState)
-{Playerhistory store_game;
+{
+    Playerhistory store_game;
     QString lastposition;
     QString result;
     switch (boardState) {
     case BoardState::XWins:
         lastposition = last_position;
-        qDebug()<< Ai_checked;
+        qDebug() << Ai_checked;
         counterX++;
-        ui->adell->setText(QString("Player 1 : %1").arg(counterX));  // Update Player 1 counter label
-        if(Ai_checked){
-            result = "loss";}
-        else{
-            result = "win";}
-        qDebug()<<username;
+        updatePlayerNames();  // Update Player 1 counter label with username
+        if (Ai_checked) {
+            result = "loss";
+        } else {
+            result = "win";
+        }
+        qDebug() << username;
         store_game.recordGame(username, result, lastposition);
-        return "player X wins!";
+        return QString("%1 wins!").arg(username);  // Show username in the winning message
     case BoardState::OWins:
         counterO++;
         updatePlayerNames();  // Update Player 2 counter label
         lastposition = last_position;
-        qDebug()<< Ai_checked;
-        if(Ai_checked){
-            result = "win";}
-        else{
-            result = "loss";}
-        qDebug()<<username;
+        qDebug() << Ai_checked;
+        if (Ai_checked) {
+            result = "win";
+        } else {
+            result = "loss";
+        }
+        qDebug() << username;
         store_game.recordGame(username, result, lastposition);
-        return "player O wins!";
+        return "Player O wins!";
     case BoardState::Tie:
         lastposition = last_position;
-        qDebug()<< Ai_checked;
+        qDebug() << Ai_checked;
         result = "tie";
-        qDebug()<<username;
+        qDebug() << username;
         store_game.recordGame(username, result, lastposition);
-        return "it's a tie!";
+        return "It's a tie!";
     default:
         return "";
     }
 }
+
 void TicTacToeGame::updatePlayerNames()
 {
     if (Ai_checked) {
@@ -225,12 +232,14 @@ void TicTacToeGame::updatePlayerNames()
     } else {
         ui->player2->setText(QString("Player 2 : %1").arg(counterO));
     }
+    ui->adell->setText(QString("%1 : %2").arg(username).arg(counterX));  // Update Player 1 counter label with username
     return;
 }
 
 void TicTacToeGame::declareGameState(BoardState boardState)
 {
     QMessageBox resultBox;
+    clickSound2.play();
     resultBox.setWindowTitle("                        Game Result");
     resultBox.setWindowIcon(QIcon(":/images/images/icon1.png"));
     resultBox.setText("Game over, " + getBoardFinalStateText(boardState));
@@ -282,7 +291,7 @@ border-color: #000000;
 
 void TicTacToeGame::reset(vector<Cell> &cells)
 {
-clickSound.play();
+    clickSound.play();
     for (auto &cell : cells)
         cell.cellBtn->setText("");
 }
