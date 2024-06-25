@@ -1,4 +1,4 @@
-GOOGLETEST_DIR = ../../Tools/googletest-release-1.10.0
+GOOGLETEST_DIR = C:\Users\hp\Desktop\Last\googletest-main
 
 QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
