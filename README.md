@@ -80,7 +80,7 @@ control workflows.
 ## :star2: About the Project
 
 <div align="center"> 
-  ![til](./overview.gif) alt="Overview" />
+  ![Demo](overview.gif) alt="Overview" />
 </div>
 
 
