@@ -80,7 +80,7 @@ control workflows.
 ## :star2: About the Project
 
 <div align="center"> 
-  ![](TicTacToeLast - Copy/overview.gif) alt="Overview" />
+  ![](https://github.com/TIC-TAC-TOE/overview.gif) alt="Overview" />
 </div>
 
 
