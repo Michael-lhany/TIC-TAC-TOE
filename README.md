@@ -80,7 +80,7 @@ control workflows.
 ## :star2: About the Project
 
 <div align="center"> 
-  <img src="TicTacToeLast - Copy/overview.mp4" alt="screenshot" />
+  ![Demo](TicTacToeLast - Copy/overview.gif) alt="screenshot" />
 </div>
 
 
