@@ -113,20 +113,20 @@ control workflows.
 <!-- Features -->
 ### :dart: Features
 
-- [Gameplay Modes:]
-* Player-versus-Player (PvP): Two human players compete against each other.
-* Player-versus-AI (PvAI): A single player competes against an AI opponent with strategic algorithms in addition to the option of if Ai start or not.
+- Gameplay Modes:
+     * Player-versus-Player (PvP): Two human players compete against each other.
+     * Player-versus-AI (PvAI): A single player competes against an AI opponent with strategic algorithms in addition to the option of if Ai start or not.
 - User Authentication:
-* Secure login and registration.
-* Password hashing for secure storage.
+     * Secure login and registration.
+     * Password hashing for secure storage.
 - Personalized Game History:
-* Storage and retrieval of game histories for each user.
-* Ability to review and replay past games.
+     * Storage and retrieval of game histories for each user.
+     * Ability to review and replay past games.
 - Graphical User Interface (GUI):
-* Intuitive interface displaying the Tic Tac Toe board.
-* User-friendly screens for registration, login, and profile management.
+     * Intuitive interface displaying the Tic Tac Toe board.
+     * User-friendly screens for registration, login, and profile management.
 - AI Opponent:
-* AI uses the minimax algorithm for optimal moves.
+     * AI uses the minimax algorithm for optimal moves.
 
 <!-- Color Reference -->
 ### :art: Color Reference
