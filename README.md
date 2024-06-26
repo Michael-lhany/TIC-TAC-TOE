@@ -128,16 +128,9 @@ control workflows.
 - AI Opponent:
      * AI uses the minimax algorithm for optimal moves.
 
-<!-- Color Reference -->
+<!-- Simple Class Diagram -->
 ### :art: Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/simple%20class%20diagram.png)
 
 <!-- Env Variables -->
 ### :key: Environment Variables
