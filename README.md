@@ -60,7 +60,7 @@ control workflows.
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents                                                                                                    
 - [About the Project](#star2-about-the-project)
-  * [Tech Stack](#space_invader-tech-stack)
+  * [Technical Map](#space_invader-tech-stack)
   * [Features](#dart-features)
   * [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
@@ -84,7 +84,7 @@ control workflows.
 </div>
 
 <!-- Tools -->
-### :space_invader: Tech Stack
+### :space_invader: Technical Map
 
 <details>
   <summary>Tools</summary>
@@ -185,11 +185,14 @@ control workflows.
 2. Login or Register:
   -If you are a new user, register by providing a username and password.
   -If you are an existing user, log in with your credentials.
+
 3.Start a Game:
   -If you are a new user, you can learn how to play the game from the guide.
   -Before start a game, you can set the options as you like 3x3 or 4x4 ...10x10 board's size, Choose between PvP or PvAI mode.
+
 4. Play the Game:
   -The game will display the winner or indicate a tie.
+
 5. View Game History:
   -Access your game history to review past games, no of games played, games won, games losed, games drawed.
 
@@ -225,9 +228,7 @@ control workflows.
 </a>
 
 
-Contributions are always welcome!
-
--Follow these steps to contribute:
+Contributions are always welcome! Follow these steps to contribute:
   1. Fork the repository.
   2. Create a new branch `(git checkout -b feature-branch)`.
   3. Make your changes and commit them `(git commit -m 'Add new feature')`.
@@ -238,12 +239,12 @@ Contributions are always welcome!
 <!-- Contact -->
 ## :handshake: Contact
 
-Muhammed Adel - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-Yousef Bably - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-Michael Hany - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-Yousef Karam - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-Yousef Gamal - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-Project Link: [https://github.com/Michael-lhany/TIC-TAC-TOE](https://github.com/Michael-lhany/TIC-TAC-TOE)
+- Muhammed Adel - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+- Yousef Bably - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+- Michael Hany - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+- Yousef Karam - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+- Yousef Gamal - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+- Project Link: [https://github.com/Michael-lhany/TIC-TAC-TOE](https://github.com/Michael-lhany/TIC-TAC-TOE)
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
