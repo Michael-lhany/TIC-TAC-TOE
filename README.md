@@ -1,11 +1,3 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
-
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
 
 <!--
 This README is a slimmed down version of the original one.
@@ -22,7 +14,7 @@ Removed sections:
   <h1>Advanced Tic Tac Toe Game</h1>
   
   <!-- Table of Contents -->
-# :notebook_with_decorative_cover: Project Overview:                                                          
+# :notebook_with_decorative_cover: Project Overview                                                          
   Develop an advanced version of Tic Tac Toe game that incorporates user authentication,
 personalized game history, and an intelligent (Artificial Intelligent) AI opponent. The game will
 support both player-vs-player and player-vs-AI modes, allowing users to log in, track their game
@@ -32,34 +24,34 @@ control workflows.
   
 <!-- Badges -->
 <p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
+  <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/Michael-lhany/TIC-TAC-TOE" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/Michael-lhany/TIC-TAC-TOE" alt="last update" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
+  <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/network/members">
+    <img src="https://img.shields.io/github/forks/Michael-lhany/TIC-TAC-TOE" alt="forks" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
+  <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/stargazers">
+    <img src="https://img.shields.io/github/stars/Michael-lhany/TIC-TAC-TOE" alt="stars" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
+  <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/issues/">
+    <img src="https://img.shields.io/github/issues/Michael-lhany/TIC-TAC-TOE" alt="open issues" />
   </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
+  <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/master/LICENSE">
+    <img src="https://img.shields.io/github/license/Michael-lhany/TIC-TAC-TOE.svg" alt="license" />
   </a>
 </p>
    
 <h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE">Documentation</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/issues/">Report Bug</a>
   <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/issues/">Request Feature</a>
   </h4>
 </div>
 
@@ -70,7 +62,6 @@ control workflows.
 - [About the Project](#star2-about-the-project)
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
   * [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
