@@ -242,6 +242,6 @@ Use this section to mention useful resources and libraries that you have used in
 
  - [ChatGPT](https://shields.io/)
  - [QT Documentation](https://doc.qt.io/)
- - [Gooogle Test](https://github.com/google/googletest)
+ - [Google Test](https://github.com/google/googletest)
  - [QT Templates](https://doc.qt.io/qt-6/qtquicktemplates2-index.html)
 
