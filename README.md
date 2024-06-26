@@ -87,26 +87,19 @@ control workflows.
 ### :space_invader: Tech Stack
 
 <details>
-  <summary>Client</summary>
+  <summary>Tools</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://visualstudio.microsoft.com/">Typescript</a></li>
+    <li><a href="https://www.jetbrains.com/clion/">Typescript</a></li>
+    <li><a href="https://www.qt.io/product/development-tools">Typescript</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Google_Test">Typescript</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
+    <li><a href="https://github.com/">Typescript</a></li>
   </ul>
 </details>
 
@@ -114,28 +107,26 @@ control workflows.
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
   </ul>
 </details>
 
 <!-- Features -->
 ### :dart: Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Gameplay Modes:
+* Player-versus-Player (PvP): Two human players compete against each other.
+* Player-versus-AI (PvAI): A single player competes against an AI opponent with strategic algorithms in addition to the option of if Ai start or not.
+- User Authentication:
+* Secure login and registration.
+* Password hashing for secure storage.
+- Personalized Game History:
+* Storage and retrieval of game histories for each user.
+* Ability to review and replay past games.
+- Graphical User Interface (GUI):
+* Intuitive interface displaying the Tic Tac Toe board.
+* User-friendly screens for registration, login, and profile management.
+- AI Opponent:
+* AI uses the minimax algorithm for optimal moves.
 
 <!-- Color Reference -->
 ### :art: Color Reference
