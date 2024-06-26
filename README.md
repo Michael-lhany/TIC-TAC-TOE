@@ -229,7 +229,7 @@ Contributions are always welcome! Follow these steps to contribute:
 ## :handshake: Contact
 
 - Muhammed Adel - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-- Yousef Bably - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+- Yousef Bably - yousefelbably66@gmail.com
 - Michael Hany - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
 - Yousef Karam - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
 - Yousef Gamal -  YousefGamalTawfik@gmail.com
