@@ -140,84 +140,82 @@ control workflows.
 <!-- Game Screenshots -->
 ##  :art: Getting Started
 1. Startup Page
-   ![Startup Page](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture.PNG)
+
+   - ![Startup Page](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture.PNG)
+
 2. Game menu
-   ![Game menu](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture2.PNG)
+
+   - ![Game menu](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture2.PNG)
+
 3. Game options
-   ![Game options](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture3.PNG)
+
+   - ![Game options](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture3.PNG)
+
 4. Player history
-   ![Player history](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture4.PNG)
+
+   - ![Player history](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture4.PNG)
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
 
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
 <!-- Installation -->
 ### :gear: Installation
-
-Install my-project with npm
-
+1. Clone the Repository
 ```bash
-  yarn install my-project
-  cd my-project
+  git clone https://github.com/Michael-lhany/TIC-TAC-TOE.git
+  cd advanced-tic-tac-toe
+  cd tictactoev
 ```
+2. Install Dependencies: Ensure you have Qt installed. You can download it from Qt's official website.
 
-
-<!-- Run Locally -->
-### :running: Run Locally
-
-Clone the project
-
+3. Build the Project: Open the project in Qt Creator and build it, or use the following command line instructions:
 ```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
+  mkdir -p build
+  cd build
+  qmake ../Qt-Tic-Tac-Toe.pro
+  make
 ```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  yarn install
-```
-
-Start the server
-
-```bash
-  yarn start
-```
-
 
 <!-- Usage -->
 ## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
+1. Run the Application: After building the project, run the executable:
+```bash
+  ./Qt-Tic-Tac-Toe
 ```
+2. Login or Register:
+  -If you are a new user, register by providing a username and password.
+  -If you are an existing user, log in with your credentials.
+3.Start a Game:
+  -If you are a new user, you can learn how to play the game from the guide.
+  -Before start a game, you can set the options as you like 3x3 or 4x4 ...10x10 board's size, Choose between PvP or PvAI mode.
+4. Play the Game:
+  -The game will display the winner or indicate a tie.
+5. View Game History:
+  -Access your game history to review past games, no of games played, games won, games losed, games drawed.
 
-<!-- Roadmap -->
-## :compass: Roadmap
-
-* [x] Todo 1
-* [ ] Todo 2
+<!-- Testing -->
+## 	:toolbox: Testing
+1. Download GoogleTest: Download GoogleTest from `GoogleTest GitHub repository`.
+2. Configure GoogleTest Directory: Navigate to the testing directory
+```bash
+  cd test/
+```
+3.Configure GoogleTest Directory: Navigate to the testing directory Open the `gtest_dependency file` and change the line:
+```bash
+  GOOGLETEST_DIR = "$$PWD/googletest/googletest"
+```
+  to the directory where you have downloaded `GoogleTest`, for example:
+```bash
+  GOOGLETEST_DIR = "/path/to/your/googletest"
+```
+4.Run Tests: Build and run the tests to ensure everything is working correctly:
+```bash
+  mkdir -p build
+  cd build
+  qmake ../Qt-Tic-Tac-Toe.pro
+  make
+  ./tictactoe
+```
 
 <!-- Contributing -->
 ## :wave: Contributing
@@ -229,35 +227,31 @@ function App() {
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-
-<!-- License -->
-## :warning: License
-
-Distributed under the no License. See LICENSE.txt for more information.
+-Follow these steps to contribute:
+  1. Fork the repository.
+  2. Create a new branch `(git checkout -b feature-branch)`.
+  3. Make your changes and commit them `(git commit -m 'Add new feature')`.
+  4. Push to the branch `(git push origin feature-branch)`.
+  5. Create a Pull Request.
 
 
 <!-- Contact -->
 ## :handshake: Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
+Muhammed Adel - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+Yousef Bably - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+Michael Hany - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+Yousef Karam - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+Yousef Gamal - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
+Project Link: [https://github.com/Michael-lhany/TIC-TAC-TOE](https://github.com/Michael-lhany/TIC-TAC-TOE)
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
 
 Use this section to mention useful resources and libraries that you have used in your projects.
 
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
+ - [ChatGBT](https://shields.io/)
+ - [QT Documentation](https://doc.qt.io/)
+ - [Gooogle Test](https://github.com/google/googletest)
+ - [QT Templates](https://doc.qt.io/qt-6/qtquicktemplates2-index.html)
 
