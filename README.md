@@ -240,7 +240,7 @@ Contributions are always welcome! Follow these steps to contribute:
 
 Use this section to mention useful resources and libraries that you have used in your projects.
 
- - [ChatGBT](https://shields.io/)
+ - [ChatGPT](https://shields.io/)
  - [QT Documentation](https://doc.qt.io/)
  - [Gooogle Test](https://github.com/google/googletest)
  - [QT Templates](https://doc.qt.io/qt-6/qtquicktemplates2-index.html)
