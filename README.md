@@ -89,10 +89,10 @@ control workflows.
 <details>
   <summary>Tools</summary>
   <ul>
-    <li><a href="https://visualstudio.microsoft.com/">Typescript</a></li>
-    <li><a href="https://www.jetbrains.com/clion/">Typescript</a></li>
-    <li><a href="https://www.qt.io/product/development-tools">Typescript</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Google_Test">Typescript</a></li>
+    <li><a href="https://visualstudio.microsoft.com/">VisualStudio</a></li>
+    <li><a href="https://www.jetbrains.com/clion/">CLion</a></li>
+    <li><a href="https://www.qt.io/product/development-tools">GUI Framework: Qt</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Google_Test">GoogleTest framework</a></li>
   </ul>
 </details>
 
