@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>howtoplay</class>
+ <widget class="QDialog" name="howtoplay">
+  <property name="enabled">
+   <bool>false</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>4</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #e3e3e3;
+    color: white;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>-100</y>
+     <width>981</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1 style=&quot; margin-top:20px; margin-bottom:12px; margin-left:20px; margin-right:20px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:24pt; font-weight:700; color:#0000ff;&quot;&gt;TIC TAC TOE&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ff0000;&quot;&gt;-You probably already know how to play Tic-Tac-Toe. It's a really simple game, right? That's what most people think.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ff0000;&quot;&gt;But if you really wrap your brain around it, you'll discover that Tic-Tac-Toe isn't quite as simple as you think!.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>491</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55aa00;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#55aa00;&quot;&gt;-TicTacToe (along with other games) involves looking ahead, trying&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#55aa00;&quot;&gt;to figure out what the person playing against you might do next.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>511</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:xx-large; font-weight:700; color:#0055ff;&quot;&gt;Rules for Tic Tac Toe&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#aa5500;&quot;&gt;1) The game is played on a grid that's 3 squares by 3 squares.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#aa5500;&quot;&gt;2) You are X , your friend (or the computer in this case) is O .&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#aa5500;&quot;&gt;Players take turns putting their marks in empty squares. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#aa5500;&quot;&gt;3) The first player to get 3 of her marks in a row &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#aa5500;&quot;&gt;(up, down, across,or diagonally) is the winner.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#aa5500;&quot;&gt;4) When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>1971</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:xx-large; font-weight:700; color:#0055ff;&quot;&gt;How can I win at Tic-Tac-Toe?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ffaa00;&quot;&gt;To beat the computer (or at least tie), you need to make use of a little bit of strategy.Strategy means figuring out&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ffaa00;&quot;&gt;what you need to do to win.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ffaa00;&quot;&gt;Part of your strategy is trying to figure out how to get three X s in a row. The other part is trying to figure out how&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ffaa00;&quot;&gt;to stop the computer from getting three O s in a row..&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ffaa00;&quot;&gt;If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:14px; font-weight:700; font-style:italic; color:#ffaa00;&quot;&gt;but at least you'll tie.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gifLabel">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>411</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

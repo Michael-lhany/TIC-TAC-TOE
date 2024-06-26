@@ -45,9 +45,9 @@ control workflows.
 </p>
    
 <h4>
-    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/">View Demo</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/overview.gif">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE">Documentation</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/TicTacToe SRS.doc">Documentation</a>
   <span> · </span>
     <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/issues/">Report Bug</a>
   <span> · </span>
@@ -79,35 +79,28 @@ control workflows.
 <!-- About the Project -->
 ## :star2: About the Project
 
-<div align="center"> 
-  <img src="TicTacToeLast - Copy/overview.mp4" alt="screenshot" />
+<div align="center">
+  <img src="overview.gif" alt="Overview" />
 </div>
 
-
-<!-- TechStack -->
+<!-- Tools -->
 ### :space_invader: Tech Stack
 
 <details>
-  <summary>Client</summary>
+  <summary>Tools</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://visualstudio.microsoft.com/">VisualStudio</a></li>
+    <li><a href="https://www.jetbrains.com/clion/">CLion</a></li>
+    <li><a href="https://www.qt.io/product/development-tools">GUI Framework: Qt</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Google_Test">GoogleTest framework</a></li>
+    <li><a href="https://doc.qt.io/qt-6/qmake-manual.html">Qmake</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
+    <li><a href="https://github.com/">Git & Github</a></li>
   </ul>
 </details>
 
@@ -115,48 +108,34 @@ control workflows.
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
   </ul>
 </details>
 
 <!-- Features -->
 ### :dart: Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Gameplay Modes:
+     * Player-versus-Player (PvP): Two human players compete against each other.
+     * Player-versus-AI (PvAI): A single player competes against an AI opponent with strategic algorithms in addition to the option of if Ai start or not.
+- User Authentication:
+     * Secure login and registration.
+     * Password hashing for secure storage.
+- Personalized Game History:
+     * Storage and retrieval of game histories for each user.
+     * Ability to review and replay past games.
+- Graphical User Interface (GUI):
+     * Intuitive interface displaying the Tic Tac Toe board.
+     * User-friendly screens for registration, login, and profile management.
+- AI Opponent:
+     * AI uses the minimax algorithm for optimal moves.
 
-<!-- Color Reference -->
-### :art: Color Reference
+<!-- Simple Class Diagram -->
+### :art: Simple Class Diagram
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/simple%20class%20diagram.png)
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
-
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
+<!-- User Sequence Flow -->
+### :key: User Sequence Flow
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/SequenceDiagram.png)
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
