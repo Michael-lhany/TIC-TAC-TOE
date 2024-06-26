@@ -137,6 +137,17 @@ control workflows.
 ### :key: User Sequence Flow
 ![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/SequenceDiagram.png)
 
+<!-- Game Screenshots -->
+##  :art: Getting Started
+1.Startup Page
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture.PNG)
+2.Game menu
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture2.PNG)
+3.Game options
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture3.PNG)
+4.Player history
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture4.PNG)
+
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
 
