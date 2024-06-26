@@ -183,18 +183,18 @@ control workflows.
   ./Qt-Tic-Tac-Toe
 ```
 2. Login or Register:
-  -If you are a new user, register by providing a username and password.
-  -If you are an existing user, log in with your credentials.
+     - If you are a new user, register by providing a username and password.
+     - If you are an existing user, log in with your credentials.
 
-3.Start a Game:
-  -If you are a new user, you can learn how to play the game from the guide.
-  -Before start a game, you can set the options as you like 3x3 or 4x4 ...10x10 board's size, Choose between PvP or PvAI mode.
+3. Start a Game:
+     - If you are a new user, you can learn how to play the game from the guide.
+     - Before start a game, you can set the options as you like 3x3 or 4x4 ...10x10 board's size, Choose between PvP or PvAI mode.
 
 4. Play the Game:
-  -The game will display the winner or indicate a tie.
+     - The game will display the winner or indicate a tie.
 
 5. View Game History:
-  -Access your game history to review past games, no of games played, games won, games losed, games drawed.
+     - Access your game history to review past games, no of games played, games won, games losed, games drawed.
 
 <!-- Testing -->
 ## 	:toolbox: Testing
