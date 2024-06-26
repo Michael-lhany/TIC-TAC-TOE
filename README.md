@@ -62,16 +62,12 @@ control workflows.
 - [About the Project](#star2-about-the-project)
   * [Technical Map](#space_invader-tech-stack)
   * [Features](#dart-features)
-  * [Environment Variables](#key-environment-variables)
+  * [Game Screenshots](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
-  * [Run Locally](#running-run-locally)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
+  * [Usage](#toolbox)
+  * [Testing](#bangbang-prerequisites)
 - [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [License](#warning-license)
 - [Contact](#handshake-contact)
 - [Acknowledgements](#gem-acknowledgements)
   
@@ -138,7 +134,7 @@ control workflows.
 ![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/SequenceDiagram.png)
 
 <!-- Game Screenshots -->
-##  :art: Getting Started
+##  :art: Game Screenshots
 1. Startup Page
 
    - ![Startup Page](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/asserts/Capture.PNG)
@@ -164,7 +160,7 @@ control workflows.
 ```bash
   git clone https://github.com/Michael-lhany/TIC-TAC-TOE.git
   cd advanced-tic-tac-toe
-  cd tictactoev
+  cd Qt-Tic-Tac-Toe
 ```
 2. Install Dependencies: Ensure you have Qt installed. You can download it from Qt's official website.
 
