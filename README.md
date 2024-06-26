@@ -45,9 +45,9 @@ control workflows.
 </p>
    
 <h4>
-    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/">View Demo</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/overview.gif">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE">Documentation</a>
+    <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/TicTacToe SRS.doc">Documentation</a>
   <span> · </span>
     <a href="https://github.com/Michael-lhany/TIC-TAC-TOE/issues/">Report Bug</a>
   <span> · </span>
@@ -99,7 +99,7 @@ control workflows.
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://github.com/">Typescript</a></li>
+    <li><a href="https://github.com/">Git & Github</a></li>
   </ul>
 </details>
 
