@@ -19,12 +19,16 @@ Removed sections:
 <div align="center">
 
   <img src="TicTacToeLast - Copy/images/icon.png"   alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>Advanced Tic Tac Toe Game</h1>
   
-  <p>
-    An awesome README template for your projects! 
-  </p>
-
+  <!-- Table of Contents -->
+# :notebook_with_decorative_cover: Project Overview:                                                          
+  Develop an advanced version of Tic Tac Toe game that incorporates user authentication,
+personalized game history, and an intelligent (Artificial Intelligent) AI opponent. The game will
+support both player-vs-player and player-vs-AI modes, allowing users to log in, track their game
+history, and analyze past games. The project will employ best practices in software
+engineering, including secure user management, rigorous testing, and professional version
+control workflows.
   
 <!-- Badges -->
 <p>
@@ -62,8 +66,7 @@ Removed sections:
 <br />
 
 <!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
-
+# :notebook_with_decorative_cover: Table of Contents                                                                                                    
 - [About the Project](#star2-about-the-project)
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
