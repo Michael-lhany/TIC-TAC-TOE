@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/icon.png</file>
+        <file>images/icon1.png</file>
+        <file>images/xoxo-vsauce.gif</file>
+        <file>images/tic.gif</file>
+        <file>images/click_sound.wav</file>
+        <file>images/new2.jpg</file>
+        <file>images/new3.jpg</file>
+        <file>images/win.wav</file>
+        <file>images/goodresult.wav</file>
+        <file>images/fail.wav</file>
+        <file>images/draw.wav</file>
+        <file>images/back.jpg</file>
+        <file>images/back2.jpg</file>
+    </qresource>
+</RCC>
