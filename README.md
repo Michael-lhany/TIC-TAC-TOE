@@ -1,12 +1,5 @@
-
-<!--
-This README is a slimmed down version of the original one.
-Removed sections:
-- Screenshots
-- Running Test
-- Deployment
-- FAQ
--->
+                    
+  
 
 <div align="center">
 
