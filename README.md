@@ -79,10 +79,9 @@ control workflows.
 <!-- About the Project -->
 ## :star2: About the Project
 
-<div align="center"> 
-  ![Demo](TicTacToeLast - Copy/overview.gif) alt="screenshot" />
+<div align="center">
+  <img src="overview.gif" alt="Overview" />
 </div>
-
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
