@@ -83,7 +83,7 @@ control workflows.
   <img src="overview.gif" alt="Overview" />
 </div>
 
-<!-- TechStack -->
+<!-- Tools -->
 ### :space_invader: Tech Stack
 
 <details>
@@ -93,6 +93,7 @@ control workflows.
     <li><a href="https://www.jetbrains.com/clion/">CLion</a></li>
     <li><a href="https://www.qt.io/product/development-tools">GUI Framework: Qt</a></li>
     <li><a href="https://en.wikipedia.org/wiki/Google_Test">GoogleTest framework</a></li>
+    <li><a href="https://doc.qt.io/qt-6/qmake-manual.html">Qmake</a></li>
   </ul>
 </details>
 
@@ -129,17 +130,12 @@ control workflows.
      * AI uses the minimax algorithm for optimal moves.
 
 <!-- Simple Class Diagram -->
-### :art: Color Reference
+### :art: Simple Class Diagram
 ![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/simple%20class%20diagram.png)
 
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
+<!-- User Sequence Flow -->
+### :key: User Sequence Flow
+![Class Diagram](https://github.com/Michael-lhany/TIC-TAC-TOE/blob/main/SequenceDiagram.png)
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
