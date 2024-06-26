@@ -113,7 +113,7 @@ control workflows.
 <!-- Features -->
 ### :dart: Features
 
-- Gameplay Modes:
+- [Gameplay Modes:]
 * Player-versus-Player (PvP): Two human players compete against each other.
 * Player-versus-AI (PvAI): A single player competes against an AI opponent with strategic algorithms in addition to the option of if Ai start or not.
 - User Authentication:
