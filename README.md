@@ -231,8 +231,8 @@ Contributions are always welcome! Follow these steps to contribute:
 - Muhammed Adel - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
 - Yousef Bably - yousefelbably66@gmail.com
 - Michael Hany - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-- Yousef Karam - [@gmail_handle](https://gmail.com/twitter_handle) - email@email_client.com
-- Yousef Gamal -  YousefGamalTawfik@gmail.com
+- Yousef Karam - Michaelhany765@gmail.com
+- Yousef Gamal - YousefGamalTawfik@gmail.com
 - Project Link: [https://github.com/Michael-lhany/TIC-TAC-TOE](https://github.com/Michael-lhany/TIC-TAC-TOE)
 
 <!-- Acknowledgments -->
