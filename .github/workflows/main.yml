@@ -27,7 +27,7 @@ jobs:
 
       - name: Build the app
         run: |
-          cd Qt_2
+          cd TicTacToe_performance
           & "${env:QTDIR}\bin\qmake.exe" Qt-Tic-Tac-Toe.pro
           nmake
 
