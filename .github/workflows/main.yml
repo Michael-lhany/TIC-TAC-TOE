@@ -14,30 +14,28 @@ jobs:
 
       - name: Set up Qt environment
         run: |
-          # Set the Qt installation path with escaped backslashes
+          # Set the Qt installation path
           $env:QTDIR = "C:\\Qt\\6.7.0\\msvc2019_64"
 
           # Add Qt binaries to PATH
-          $env:Path += ";${env:QTDIR}\\bin;${env:QTDIR}\\Tools\\QtCreator\\bin"
+          $env:Path += ";${env:QTDIR}\\bin"
 
-      - name: Build the app
+      - name: Build the application
         run: |
           cd TicTacToe_performance
           & "${env:QTDIR}\\bin\\qmake.exe" Qt-Tic-Tac-Toe.pro
           nmake
 
-      - name: Run the app
+      - name: Run the application
         run: |
-          cd TicTacToe_performance/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/release
+          cd TicTacToe_performance/build
           .\\Qt-Tic-Tac-Toe.exe
 
-      - name: Build the tests
+      - name: Build and run tests
         run: |
           cd Qt-Tic-Tac-Toe-community/TicTacToeTest
           & "${env:QTDIR}\\bin\\qmake.exe" TicTacToeTest.pro
           nmake
 
-      - name: Run the tests
-        run: |
-          cd Qt-Tic-Tac-Toe-community/TicTacToeTest/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/debug
+          cd build
           .\\TicTacToeTest.exe
